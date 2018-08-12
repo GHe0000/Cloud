@@ -6,8 +6,8 @@
 # Site
 title: NexT
 subtitle:
-description:
-author: John Doe
+description: 未来，已来！
+author: a1= σ（Wa0+b）
 # Support language: de, en, fr-FR, id, ja, ko, pt-BR, pt, ru, zh-Hans, zh-hk, zh-tw
 language: zh-Hans
 date_format: '%Y-%m-%d'
@@ -231,9 +231,9 @@ social_icons:
   Weibo: weibo
 
 
-# Sidebar Avatar
+ #Sidebar Avatar
 # in directory: /assets/images/avatar.gif
-#avatar:
+avatar: /assets/images/avatar.gif
 
 
 # Table Of Contents in the Sidebar
@@ -256,7 +256,7 @@ toc:
 
 sidebar:
   # Sidebar Position, available value: left | right
-  position: right
+  position: left
   #position: right
 
   # Sidebar Display, available value:
