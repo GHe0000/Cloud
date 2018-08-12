@@ -2,7 +2,7 @@
 title: Hello World！
 description: Test
 categories:
- - tutorial
+ - Test
 tags:
 ---
 # Blog测试

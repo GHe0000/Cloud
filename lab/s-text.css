@@ -10,18 +10,18 @@
 
 .text:nth-child(3n + 1) {
   stroke: #000000;
-    animation: stroke 6s  ease-in-out forwards;  
+    animation: stroke 7s  ease-in-out forwards;  
 
 }
 .text:nth-child(3n + 2) {
   stroke: #808080;
-animation: stroke1 6s  ease-in-out forwards;
+animation: stroke1 7s  ease-in-out forwards;
 
 }
 
 .text:nth-child(3n + 3) {
   stroke: #696969;
-animation: stroke2 6s  ease-in-out forwards;
+animation: stroke2 7s  ease-in-out forwards;
 
 }
 
