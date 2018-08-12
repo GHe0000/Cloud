@@ -7,7 +7,7 @@
 title: NexT
 subtitle:
 description: 未来，已来！
-author: a1= σ（Wa0+b）
+author: a<sup>1</sup>= σ（Wa<sup>0</sup>+b）
 # Support language: de, en, fr-FR, id, ja, ko, pt-BR, pt, ru, zh-Hans, zh-hk, zh-tw
 language: zh-Hans
 date_format: '%Y-%m-%d'
