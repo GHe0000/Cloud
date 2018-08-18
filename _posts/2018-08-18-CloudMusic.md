@@ -1,22 +1,23 @@
 ---
 title: 爬取网易云歌单音乐ID
+description: 使用Python3爬取网易云歌单音乐ID
 categories:
  - Python
 tags: 爬虫
 ---
 
 此项目为精简网易云音乐的一部分，Github项目地址：https://github.com/wallfacerlogic/CloudMusic
-## 0.收集信息
+## 1.收集信息
 先打开Chrome，然后进入歌单页面，进入开发者模式，F5刷新  
-这时看看Network，找到歌单歌曲名和ID  
-![avatar][base64-p1]  
-注意一下Http请求头  
+这时看看Network，先注意一下Http请求头  
 ![avatar][base64-p2]  
+找到歌单歌曲名和ID  
+![avatar][base64-p1]  
 看来很简单的了，歌名前面就是id了，但是没有歌手信息啊，还得再折腾  
 进入歌曲的页面，收集信息  
 ![avatar][base64-P3]  
 
-## 1.代码
+## 2.代码
 So，大体流程出来了，先爬取歌单界面得到歌曲ID，在进入每首歌的界面收集歌曲信息，汇总输出  
 以下是本人代码（Python3）（PS：在做多首歌曲信息搜索的后期加了个单首歌曲信息搜索。）：  
 ```python
@@ -80,7 +81,7 @@ if __name__ == '__main__':
     search = search()
     search.work(歌单ID)
 ```  
-输出信息(用本人喜欢歌曲ID测试)：  
+输出信息(用本人的喜爱歌曲歌单ID测试)：  
 ```
 ID - 歌名 - 歌手
 444548196 - Evergreen - Thomas Bergersen
@@ -101,7 +102,7 @@ ID - 歌名 - 歌手
 29734857 - Cornfield Chase - Hans Zimmer
 该歌单共有 123 首歌曲
 ```  
-## 2.下载
+## 3.下载
 偶然在网上发现了一个接口，下载的话直接使用这个接口就行了（PS：付费歌曲也可下载）：  
 http://music.163.com/song/media/outer/url?id=“歌曲ID”  
 
