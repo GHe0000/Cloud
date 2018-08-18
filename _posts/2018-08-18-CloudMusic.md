@@ -1,5 +1,5 @@
 ---
-title: 网易云音乐爬取
+title: CloudMusic
 description: 使用Python爬虫框架实现网易云音乐歌单抓取
 categories:
  - Python
@@ -20,7 +20,7 @@ tags:爬虫
 ## 1.代码
 So，大体流程出来了，先爬取歌单界面得到歌曲ID，在进入每首歌的界面收集歌曲信息，汇总输出  
 以下是本人代码（Python3）（PS：在做完多首歌曲信息搜索的后期加了个单首歌曲信息搜索。）：  
-```
+```Python
 import re
 import os
 import sys
@@ -82,7 +82,7 @@ if __name__ == '__main__':
     search.work(歌单ID)
 ```  
 输出信息(用本人喜欢歌曲ID测试)：  
-```  
+```
 ID - 歌名 - 歌手
 444548196 - Evergreen - Thomas Bergersen
 4208408 - Eramaan Viimeinen - Nightwish
