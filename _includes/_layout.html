@@ -1,4 +1,5 @@
 <!doctype html>
+{% include effects.html %}
 {% include _blocks/title.html %}
 {% include _blocks/page_class.html %}
 {% include _blocks/sidebar.html %}
@@ -82,76 +83,5 @@
   {% include _third-party/mathjax.html %}
   {% include _third-party/scroll-cookie.html %}
   {% include _third-party/exturl.html %}
-    <style>
-    .text-popup {
-      animation: textPopup 1s;
-      color: #666666;
-      user-select: none;
-      white-space: nowrap;
-      position: absolute;
-      z-index: 99;
-    }
-    @keyframes textPopup {
-      0%, 100% {
-        opacity: 0;
-      }
-      5% {
-        opacity: 1;
-      }
-      100% {
-        transform: translateY(-50px);    
-      }
-    }
-  </style>
-<script>
-  var fnTextPopup = function (arr, options) {
-    // arr参数
-    if (!arr || !arr.length) {
-        return;    
-    }
-    // 主逻辑
-    var index = 0;
-    document.documentElement.addEventListener('click', function (event) {
-        var x = event.pageX, y = event.pageY;
-        var eleText = document.createElement('span');
-        eleText.className = 'text-popup';
-        this.appendChild(eleText);
-        if (arr[index]) {
-            eleText.innerHTML = arr[index];
-        } else {
-            index = 0;
-            eleText.innerHTML = arr[0];
-        }
-        // 动画结束后删除自己
-        eleText.addEventListener('animationend', function () {
-            eleText.parentNode.removeChild(eleText);
-        });
-        // 位置
-        eleText.style.left = (x - eleText.clientWidth / 2) + 'px';
-        eleText.style.top = (y - eleText.clientHeight) + 'px';
-        // index递增
-        index++;
-    });    
-  };
-  fnTextPopup(['Python', 'C', 'JavaScript', 'PHP', 'Ruby', 'Java', 'Objective-C', 'C#', 'C++', 'MATLAB']);
-
-  <!--崩溃欺骗-->
- var OriginTitle = document.title;
- var titleTime;
- document.addEventListener('visibilitychange', function () {
-     if (document.hidden) {
-         $('[rel="icon"]').attr('href', "/img/TEP.ico");
-         document.title = '╭(°A°`)╮ 页面崩溃啦 ~';
-         clearTimeout(titleTime);
-     }
-     else {
-         $('[rel="icon"]').attr('href', "/favicon.ico");
-         document.title = '(ฅ>ω<*ฅ) 噫又好了~' + OriginTitle;
-         titleTime = setTimeout(function () {
-             document.title = OriginTitle;
-         }, 2000);
-     }
- });
-
 </body>
 </html>
