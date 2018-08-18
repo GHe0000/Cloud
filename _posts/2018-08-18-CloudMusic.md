@@ -1,5 +1,5 @@
 ---
-title: 爬取网易云歌单音乐ID
+title: 爬取网易云歌单音乐信息
 description: 使用Python3爬取网易云歌单音乐ID
 categories:
  - Python
