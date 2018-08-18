@@ -1,9 +1,8 @@
 ---
-title: CloudMusic
-description: 使用Python爬虫框架实现网易云音乐歌单抓取
+title: 爬取网易云歌单音乐ID
 categories:
  - Python
-tags:爬虫
+tags: 爬虫
 ---
 
 此项目为精简网易云音乐的一部分，Github项目地址：https://github.com/wallfacerlogic/CloudMusic
@@ -20,7 +19,7 @@ tags:爬虫
 ## 1.代码
 So，大体流程出来了，先爬取歌单界面得到歌曲ID，在进入每首歌的界面收集歌曲信息，汇总输出  
 以下是本人代码（Python3）（PS：在做多首歌曲信息搜索的后期加了个单首歌曲信息搜索。）：  
-```Python
+```python
 import re
 import os
 import sys
