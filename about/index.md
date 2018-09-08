@@ -2,19 +2,12 @@
 layout: page
 type: about
 ---
-
-
-```
-      _________  ___       __________  ___     ___  _____  
-     /  ______/ /  /      /  ____   / /  /    /  / /  _  \  
-    /  /       /  /      /  /   /  / /  /    /  / /  / \  \  
-   /  /       /  /      /  /   /  / /  /    /  / /  /  |  |  
-  /  /       /  /      /  /   /  / /  /    /  / /  /  /  /  
- /  /_____  /  /____  /  /___/  / /  /____/  / /  /_ /  /  
-/________/ /_______/ /_________/ /__________/ /________/  
-```  
-
+  
+![avatar][img]  
+  
 此网站作为个人博客、云存储及在线笔记本使用  
 由Jekyll-Next魔改而成  
 By a1 = σ(Wa0+b)  
 Building...
+
+[img]:data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAggAAACEAQMAAADP30GqAAAAAXNSR0IArs4c6QAAAAZQTFRF////AAAAVcLTfgAAAYFJREFUaN7tmcGKBCEMRFU8ePQT/FP989leEE1FFxbNMtkhdaoKzTtMTwWxnTOZTCbTr1RfXe3bNjYk09rDeEiR/DR+JO/Wqe/hUQFCmCaMFNw6DT08yuoIcZo4UnTrNPbwKAkT0jRppOTWaepBhBCFCXmaPFJ26zT3AK9KhlCmKSMVt05LDyIEv98QbR1u90BtK0HBevCL7c7v1oMnP5cbjeO2u7CrZiAvXQ1hNhrLHUmfodyR1EeIQCJUM5E2QjWTACFive8J5IeFcmfSZyh3pq9PhkD+olDuQvoM5S4CBO9u631PiHxZXxIO1gMjHFRTIeGg3OKEg2oqJByUW5xwUG5xwnva/f7TA1tyJ9XEVa2B8F/XAx4fNBBOyo1HuXvCSbnxUHxP+AjZerD1YOvhr9YDuXCs1LXtRUTVfjXJHHoa/E/XgsyhpyHoIuDFInPoaYiSBLwWZA49DUkXAS8WmUNPQ5Yk4MUic+hpKJKE8ZWiDdvgewZ8xqBPm0ymj9YX0sGTOXVAC4wAAAAASUVORK5CYII=
