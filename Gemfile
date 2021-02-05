@@ -1,6 +1,9 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
+gemspec
 
-# A simple Ruby Gem to bootstrap dependencies for setting up and
-# maintaining a local Jekyll environment in sync with GitHub Pages
-# https://github.com/github/pages-gem
-gem 'github-pages'
+# If you've just forked the repo,
+# please remove the content above and uncomment the following before bundling.
+#
+# source "https://rubygems.org"
+
+# gem "github-pages", group: :jekyll_plugins

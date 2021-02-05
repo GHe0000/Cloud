@@ -1,169 +1,152 @@
-<p align="center">
-  <img src="mockups/rsz_junior.png"/>
-</p>
+# Simple Texture Jekyll Theme
 
-# Junior
------
+![Gem Version](https://img.shields.io/gem/v/jekyll-theme-simple-texture.svg)
 
-*Junior* is a blog/portfolio theme for [Jekyll](http://jekyllrb.com), the static site generator. It's designed and developed by [@jonobelotti_IO](https://twitter.com/jonobelotti_IO).
+Simple Texture is a gem-based responsive simple texture styled Jekyll theme for [Jekyll][Jekyll] 3.3 or above,
+which can also be forked as a boilerplate for older versions of Jekyll.
 
+## Demo
 
-See Junior in action with [the demo site](https://juniortheme.live).
+- Starter-kit demo:
+<https://yizeng.github.io/jekyll-theme-simple-texture/>
+- My own personal blog: <https://yizeng.me/blog>
 
-## Contents
+![Screenshot - Home](assets/images/screenshots/homepage.png)
 
-- [Features](#features)
-- [Preview](#preview)
-- [Usage](#usage)
-- [Options](#options)
-  - [Rems, `font-size`, and scaling](#rems-font-size-and-scaling)
-- [Development](#development)
-- [Author](#author)
-- [License](#license)
+![Screenshot - Blog](assets/images/screenshots/post.png)
 
-## Features
+## Installation
 
-- Blog/Technical posts, with support for code syntax highlighting, `LaTeX` markup, images, footnotes, and font color-highlighting
-- 'Portfolio' section, which emphasises large-image content
-- Markdown resumé, with support for fast and easy PDF printing
-- Connects to your Github profile via their API, in order to display open-source work
-- RSS Feed
-- Contact page, with anti-spam protection
-- Smooth CSS transition elements, and a nice B&W theme
+### As a Jekyll theme gem (Jekyll >= 3.3)
 
-## Preview
+If you are creating a new website or blog,
+please follow the commands below first:
 
-> **Note:** These images may be outdated. See http://juniortheme.live/ for latest version of theme
+1. Install Jekyll and [Bundler][Bundler]
 
-##### Landing Page
+       gem install jekyll bundler
 
-![Junior main page](mockups/junior-front-page.png)
+2. Create a new Jekyll app
 
-##### Dropdown Menu
+       jekyll new jekyllapp
 
-![Junior menu dropdown](mockups/junior-menu.png)
+3. Enter the new directory
 
-##### Example Blog Post
+       cd jekyllapp
 
-![Junior blog post](mockups/junior-post.png)
+4. Then follow the instructions below like existing Jekyll app.
 
-##### Resumé
+Then for existing Jekyll apps,
 
-Attractive, no-fuss resumé page that includes a PDF-print link (right) with CSS configured to ensure fidelity between screen and paper page.
+1. Install Bundler if haven't done so.
 
-![Junior resumé](mockups/junior-resume.png)
+       gem install bundler
 
-##### Open Source Showcase
+1. Remove Jekyll auto-generated default pages `404.html`, `about.markdown` and `index.markdown` or any your custom layouts or existing theme files.
 
-Connects, using Github's API, with your public profile and pulls your projects (ordered by Stars). Coming soon, you will also be able to showcase significant PRs. *Tag colours are also matched to the project's Github language colour-coding.*
+1. Remove the existing `Gemfile.lock`.
 
-![Junior open source showcase](mockups/junior-open-source.png)
+1. Download the respository [here](https://github.com/yizeng/jekyll-theme-simple-texture/archive/master.zip)
+and locate `starter-kit` folder,
+or download `starter-kit` folder directly [here](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/yizeng/jekyll-theme-simple-texture/tree/master/starter-kit).
 
-##### Project Portfolio Visual Showcase
+1. Put everything in the `starter-kit` in the root directory,
+i.e. `jekyllapp` in this example.
 
-![Junior visual portfolio](mockups/junior-main-portfolio.png)
+1. Run `bundle install` to install dependencies.
 
-##### Project Page
+1. Run Jekyll with `bundle exec jekyll serve`
 
-![Junior project page](mockups/junior-portfolio-single.png)
+1. Hack away at <http://localhost:4000>!
 
-##### About
+### As a fork
 
-![Junior about](mockups/junior-about.png)
+1. Fork the repo [here](https://github.com/yizeng/jekyll-theme-simple-texture#fork-destination-box)
 
-##### Contact
+2. Clone the repo just forked.
 
-![Junior contact](mockups/junior-contact.png)
+       git clone git@github.com:[YOUR_USERNAME]/jekyll-theme-simple-texture.git
 
-## Usage
+3. Delete `starter-kit` folder and `jekyll-theme-simple-texture.gemspec` file (they're for people installing via gem)
 
-### 1. Install dependencies
+4. Install Bundler if haven't done so.
 
-Poole is built on Jekyll and uses its built-in SCSS compiler to generate our CSS. Before getting started, you'll need to install the Jekyll gem:
+       gem install bundler
 
-```bash
-$ gem install jekyll
-```
+5. Update the `Gemfile` to look like the following:
 
-**Windows users:** Windows users have a bit more work to do, but luckily [@juthilo](https://github.com/juthilo) has your back with his [Run Jekyll on Windows](https://github.com/juthilo/run-jekyll-on-windows) guide.
+   ```ruby
+   source "https://rubygems.org"
 
-**Need syntax highlighting?** *Junior* includes support for Pygments or Rouge, so install your gem of choice to make use of the built-in styling. Read more about this [in the Jekyll docs](http://jekyllrb.com/docs/templates/#code_snippet_highlighting).
+   gem "github-pages", group: :jekyll_plugins
+   ```
 
-### 2a. Quick start
+6. Run `bundle install` to install dependencies.
 
-To help anyone with any level of familiarity with Jekyll quickly get started, *Junior* includes everything you need for a basic Jekyll site. To that end, just download *Junior* and start up Jekyll.
+7. Run Jekyll with `bundle exec jekyll serve`
 
-### 2b. Roll your own Jekyll site
+8. Hack away at <http://localhost:4000>!
 
-Folks wishing to use Jekyll's templates and styles can do so with a little bit of manual labor. Download *Junior* and then copy what you need (likely `_layouts/`, `*.html` files, `atom.xml` for RSS, and `public/` for CSS, JS, etc.).
+## Contributing
 
-### 3. Running locally
+Bug reports and pull requests are welcome on GitHub at <https://github.com/yizeng/jekyll-theme-simple-texture>. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
-To see your Jekyll site with *Junior* applied, start a Jekyll server. In Terminal, from `/junior-theme` (or whatever your Jekyll site's root directory is named):
+## Credits
 
-```bash
-> jekyll serve # You might need "bundle exec jekyll serve"
-```
-Open <http://localhost:4000> in your browser, and voilà.
-
-### 4. Serving it up
-
-If you host your code on GitHub, you can use [GitHub Pages](https://pages.github.com) to host your project.
-
-1. Fork this repo and switch to the `gh-pages` branch.
-  1. If you're [using a custom domain name](https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages), modify the `CNAME` file to point to your new domain.
-  2. If you're not using a custom domain name, **modify the `baseurl` in `_config.yml`** to point to your GitHub Pages URL. Example: for a repo at `github.com/username/junior`, use `http://username.github.io/junior/`. **Be sure to include the trailing slash.**
-3. Done! Head to your GitHub Pages URL or custom domain.
-
-No matter your production or hosting setup, be sure to verify the `baseurl` option file and `CNAME` settings. Not applying this correctly can mean broken styles on your site.
-
-## Options
-
-### Google Analytics
-
-In `_config.yml` the option `google_analytics:` is left blank if you don't want to use Google Analytics. Add `true` if you want to use it, and replace `[[[TRACKING ID HERE]]]` with your "Tracking ID". You can get one of those for your new site [here](https://www.google.com/analytics). 
-
-
-### Rems, `font-size`, and scaling
-
-*Junior* is built almost entirely with `rem`s (instead of pixels). `rem`s are like `em`s, but instead of building on the immediate parent's `font-size`, they build on the root element, `<html>`.
-
-By default, we use the following:
-
-```css
-html {
-  font-size: 16px;
-  line-height: 1.5;
-}
-@media (min-width: 38em) {
-  html {
-    font-size: 20px;
-  }
-}
-
-```
-
-To easily scale your site's typography and components, simply customize the base `font-size`s here.
-
-
-## Development
-
-*Junior* has two branches, but only one is used for active development.
-
-- `master` for development.  **All pull requests should be to submitted against `master`. Cheers**
-- `gh-pages` for the hosted site, which includes analytics tracking code. **Please avoid using this branch.**
-
-CSS is handled via Jeykll's built-in Sass compiler. Source Sass files are located in `_sass/`, included into `styles.scss`, and compile to `styles.css`.
-
-#### Running 
-
-`bundle exec jekyll serve`
-
-## Credit
-
-* [Pixyll theme](https://github.com/johnotander/pixyll) was used as a base for development of this theme.
-* [Junior.IO's](http://www.junior.io/) website design served as inspiration for this theme's look.
+- [Jekyll][Jekyll]
+  + [jekyll-feed](https://github.com/jekyll/jekyll-feed)
+  + [jekyll-redirect-from](https://github.com/jekyll/jekyll-redirect-from)
+  + [jekyll-seo-tag](https://github.com/jekyll/jekyll-seo-tag)
+  + [jekyll-sitemap](https://github.com/jekyll/jekyll-sitemap)
+  + [Simple-Jekyll-Search](https://github.com/christian-fei/Simple-Jekyll-Search)
+  + [Jekyll-Bootstrap](http://jekyllbootstrap.com/)
+  + [theme-the-program](https://github.com/jekyllbootstrap/theme-the-program)
+
+- [Sass](http://sass-lang.com/)
+  + [Normalize.css](https://necolas.github.io/normalize.css/)
+  + [Animate.css](https://daneden.github.io/animate.css/)
+  + [Simple Icons](https://simpleicons.org/)
+  + [Noise Texture Generator](http://www.noisetexturegenerator.com/)
+- JavaScript
+  + [cdnjs](https://cdnjs.com/)
+  + [jQuery](https://jquery.com/)
+  + [fullPage.js](https://alvarotrigo.com/fullPage/)
+  + [pace.js](http://github.hubspot.com/pace/docs/welcome/)
+  + [Modernizr](https://modernizr.com/)
+  + [FancyBox](http://fancybox.net/)
+  + [unveil.js](http://luis-almeida.github.io/unveil/)
+- Fonts
+  + [Font Squirrel](https://www.fontsquirrel.com/)
+  + [Bitter](https://fonts.google.com/specimen/Bitter)
+  + [Junge](https://fonts.google.com/specimen/Junge)
+  + [Ubuntu Condensed](https://fonts.google.com/specimen/Ubuntu+Condensed)
 
 ## License
 
-Open sourced under the [MIT license](LICENSE).
+The theme is available as open source under the terms of the
+[MIT License](https://github.com/yizeng/jekyll-theme-simple-texture/blob/master/LICENSE).
+
+    MIT License
+
+    Copyright (c) 2017 Yi Zeng
+
+    Permission is hereby granted, free of charge, to any person obtaining a copy
+    of this software and associated documentation files (the "Software"), to deal
+    in the Software without restriction, including without limitation the rights
+    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+    copies of the Software, and to permit persons to whom the Software is
+    furnished to do so, subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be included in all
+    copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+    SOFTWARE.
+
+[Jekyll]: http://jekyllrb.com/
+[Bundler]: https://bundler.io/
