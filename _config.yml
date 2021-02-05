@@ -21,11 +21,11 @@ sass:
   style: compressed
 
 # Site Data
-url: # the base hostname & protocol for your site, e.g. http://example.com
+url: wallfacerlogic.github.io/Cloud
 baseurl: # the subpath of your site, e.g. /blog
 title: Cloud
-description: "A gem-based responsive simple texture styled Jekyll theme."
-keywords: 'jekyll,theme,gem-based,blog'
+description: "GHe's Blog"
+keywords: 'blog'
 author:
   name: GHe
   job_title:
@@ -35,7 +35,7 @@ author:
     - name: facebook
       url:
     - name: github
-      url: https://github.com/yizeng/jekyll-theme-simple-texture
+      url: https://github.com/wallfacerlogic
     - name: instagram
       url:
     - name: linkedin
@@ -46,10 +46,10 @@ author:
       url: 
     - name: vk
       url:
-home:
-  section1: <h1>Simple Texture</h1>
-  section2: <h2>A gem-based responsive simple texture styled Jekyll theme</h2>
-  section3: <div class="social-links"><a class="ico-github btn" href="https://github.com/yizeng/jekyll-theme-simple-texture" title="View on GitHub"></a></div>
+#home:
+#  section1: <h1>Simple Texture</h1>
+#  section2: <h2>A gem-based responsive simple texture styled Jekyll theme</h2>
+#  section3: <div class="social-links"><a class="ico-github btn" href="https://github.com/yizeng/jekyll-#theme-simple-texture" title="View on GitHub"></a></div>
 blog:
   cc_license: http://creativecommons.org/licenses/by-sa/4.0/ # A link to CC License of your choice.
   cc_license_image: /assets/images/theme/cc-by-sa.png # An image of your CC License. 
