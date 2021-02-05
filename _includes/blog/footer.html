@@ -2,13 +2,6 @@
     <div class="unit-foot">
         <div class="unit-inner unit-foot-inner">
             <div class="misc vcard">
-                <div class="about">
-                    <h4><a href="{{ site.paths.home | relative_url }}">{{ site.data.i18n[site.lang].about }}</a></h4>
-                    {% if site.blog.footer_content %}
-                        <p>{{ site.blog.footer_content }}</p>
-                    {% endif %}
-                    {{ site.data.i18n[site.lang].theme_info }}
-                </div>
                 <div class="social-links">
                     {% if site.author.email %}
                         <a class="ico-gmail" href="mailto:{{ site.author.email }}" rel="me" target="_blank" title="email"></a>
