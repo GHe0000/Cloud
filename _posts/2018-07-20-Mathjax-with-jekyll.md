@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "MathJax with Jekyll"
-date: 2014-02-16
 categories: opinion
 tags:
 categories:
