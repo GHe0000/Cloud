@@ -6,7 +6,7 @@ categories:
 tags: 爬虫
 ---
 
-此项目为精简网易云音乐的一部分，Github项目地址：https://github.com/wallfacerlogic/CloudMusic
+此项目为精简网易云音乐的一部分，Github项目地址：https://github.com/ghe0000/CloudMusic
 ## 1.收集信息
 先打开Chrome，然后进入歌单页面，进入开发者模式，F5刷新  
 这时看看Network，先注意一下Http请求头  
