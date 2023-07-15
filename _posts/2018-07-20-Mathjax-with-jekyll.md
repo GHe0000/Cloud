@@ -1,11 +1,6 @@
 ---
-layout: post
 title: "MathJax with Jekyll"
-categories: opinion
-tags:
-categories:
- - Test
-image: http://gastonsanchez.com/images/blog/mathjax_logo.png
+categories: 网站测试
 ---
 
 One of the rewards of switching my website to [Jekyll](http://jekyllrb.com/) is the

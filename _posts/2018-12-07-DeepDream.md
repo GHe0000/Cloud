@@ -1,19 +1,19 @@
 ---
 title: Deep Dream
-description: 使用CNN实现Deep Dream
+description: 使用Keras实现Deep Dream
 categories:
- - 人工神经网络
-tags: 
+ - 计算机
+tags: [Python,CNN,AI,Deep Dream]
 ---
 
-## 什么是Deep Dream？
+# 什么是Deep Dream？
 DeepDream是谷歌发布的对卷积神经网络（CNN）进行可视化的方法，当然它的用途不仅限于此，我们可以通过它让机器“做梦”，计算机将自然图像的一些特征放大，生成了它想想中的一些物体。利用这个特点还可以生成一些从未有过的物体。
-## 原理
+# 原理
 卷积神经网络由于其从理论上难以解释，一直被很多学者诟病。在2013年“Visualizing and Understanding Convolutional Neural Networks”这篇文章提出了使用梯度上升的方法可视化网络每一层的特征，即用一张噪声图像输入网络，反向更新的时候不更新网络权重，而是更新初始图像的像素值，以这种“训练图像”的方式可视化网络。Deep Dream正是以此为基础。
 
 之前说过，Deep Dream需要放大图像特征。比如：有一个网络学习了分类猫和狗的任务，给这个网络一张云的图像，这朵云可能比较像狗，那么机器提取的特征可能也会像狗。假设对应一个特征[0.6, 0.4], 0.6表示为狗的概率， 0.4表示为猫的概率，那么采用L2范数可以很好达到放大特征的效果。对于这样一个特征，L2 = x1^2 + x2^2，若x1越大，x2越小，则L2越大，所以只需要最大化L2就能保证当x1>x2的时候，迭代的轮数越多x1越大，x2越小，所以图像就会越来越像狗。每次迭代相当于计算L2范数，然后用梯度上升的方法调整图像。当然不一定要一张真实的图像，也可以从一张噪声图像生成梦境，只不过生成的梦境会比较奇怪。
 
-## Deep Dream 的Keras实现
+# Deep Dream 的Keras实现
 ```python
 # -*- coding: utf-8 -*-
 import tensorflow as tf
