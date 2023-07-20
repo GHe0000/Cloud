@@ -22,7 +22,8 @@ sass:
 
 # Site Data
 url: 
-baseurl: https://cdn.jsdelivr.net/gh/ghe0000/Cloud # the subpath of your site, e.g. /blog
+baseurl: 
+# baseurl: https://cdn.jsdelivr.net/gh/ghe0000/Cloud # the subpath of your site, e.g. /blog
 title: Cloud
 description: "GHe's Blog"
 keywords: 'blog'
