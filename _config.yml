@@ -14,7 +14,7 @@ title                    : "Cloud"
 title_separator          : "-"
 name                     : &name "Guotao He"
 description              : &description "personal description"
-url                      : https://ghe0000.github.io/NewCloud # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://ghe0000.github.io/Cloud # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "academicpages/academicpages.github.io"
 
@@ -29,7 +29,7 @@ author:
   bio              : "暂时没想好的介绍"
   location         : "Earth"
   employer         : "Xiamen University"
-  uri              : https://ghe0000.github.io/NewCloud/
+  uri              : https://ghe0000.github.io/Cloud/
   email            : "guotao.he.0000@outlook.com" 
 
   # Academic websites
