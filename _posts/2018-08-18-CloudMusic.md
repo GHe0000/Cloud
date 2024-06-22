@@ -6,8 +6,12 @@ categories:
 tags: [爬虫,Python]
 ---
 
+<!-- more -->
+
 此项目为精简网易云音乐的一部分，Github项目地址：https://github.com/ghe0000/CloudMusic
+
 # 收集信息
+
 先打开Chrome，然后进入歌单页面，进入开发者模式，F5刷新  
 这时看看Network，先注意一下Http请求头  
 ![avatar][base64-p2]  
@@ -18,8 +22,10 @@ tags: [爬虫,Python]
 ![avatar][base64-P3]  
 
 # 代码
+
 So，大体流程出来了，先爬取歌单界面得到歌曲ID，在进入每首歌的界面收集歌曲信息，汇总输出  
 以下是本人代码（Python3）（PS：在做多首歌曲信息搜索的后期加了个单首歌曲信息搜索。）：  
+
 ```python
 import re
 import os

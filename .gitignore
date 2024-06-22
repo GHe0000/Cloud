@@ -1,11 +1,12 @@
-_site/*
-_theme_packages/*
+# Ignore the contents of the _site directory
+_site/
 
-Thumbs.db
-.DS_Store
+# Ignore the directory for local files during development
+local/
 
-!.gitkeep
+# Ignore the Gemfile that is generated
+Gemfile.lock
 
-.rbenv-version
-.rvmrc
-/vendor
+# Ingore files created by npm
+node_modules
+package-lock.json
