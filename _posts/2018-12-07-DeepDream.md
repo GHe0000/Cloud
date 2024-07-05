@@ -1,9 +1,11 @@
 ---
 title: Deep Dream
-description: 使用Keras实现Deep Dream
+description: 使用 Keras 实现 Deep Dream
 categories:
- - 计算机
-tags: [Python,CNN,AI,Deep Dream]
+  - 计算机
+tags: 
+  - CNN
+  - Deep Dream
 ---
 
 <!-- more -->
