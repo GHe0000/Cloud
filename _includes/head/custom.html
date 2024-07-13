@@ -45,7 +45,6 @@ MathJax = {
 .numbered_equation_container {
     width: 100%;
     display: flex;
-    overflow-x: auto;
     justify-content: space-between;
     align-items: center;
 }
@@ -55,6 +54,10 @@ MathJax = {
 }
 .equation_number {
     display: table-column;
+}
+.mjx-container[jax="CHTML"][display="true"] {
+    overflow-x: auto;
+    overflow-y: hidden;
 }
 </style>
 
