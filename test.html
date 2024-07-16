@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>I want long equations to be scrollable</title>
+    
+    <meta charset="utf-8">
+    
+    <!-- Math support https://www.mathjax.org/#gettingstarted -->
+    <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
+    </script>
+<script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        .numbered_equation_container {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .equation {
+            width: 100%;
+            overflow-x: auto;
+        }
+        .equation_number {
+            display: table-column;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <p>Here we have a small equation which works perfectly:
+    
+    <div class="numbered_equation_container">
+         <div class="equation">
+            $$E=mc^2$$
+        </div>
+        <div class="equation_number">(1)</div>
+    </div>
+    
+    Now, the following is a very long equation:
+    
+    <div class="numbered_equation_container">
+        <div class="equation">
+            $$\frac{dF}{dx}\frac{dx}{dy}\frac{dy}{d\xi}=\intop_{\mathbb{R}}f(\zeta)e^{-\zeta}\cos(w^{2}-\zeta)\
+            d\zeta+\frac{3x^{3}+(\nabla\times\boldsymbol{E})\cdot\boldsymbol{B}}{\vec{r}\cdot\vec{E}}+8\pi\hbar+\log\cos\tan\sin\pi$$
+        </div>
+        <div class="equation_number">&nbsp;&nbsp;&nbsp;&nbsp;(2)</div>
+    </div>
+    
+    which produces a "global horizontal scrollbar" for the <code>body</code> element. I would like to keep the <code>body</code> without scrollbar and add a small scrollbar only to long equaitons.
+    </p>
+    
+</body>
+</html>
