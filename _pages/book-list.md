@@ -11,13 +11,6 @@ redirect_from:
 
 To Do
 
-
-测试
-======
-
-Education
-======
-
 ## 数学
 
 ### 线性代数
