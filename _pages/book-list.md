@@ -11,6 +11,35 @@ redirect_from:
 
 To Do
 
+## 数学
+
+### 线性代数
+
+**线性代数应该这样学(Linear Algebra Done Right)** Sheldon Axler
+
+> 极好的一本线性代数教材。这本书的视角非常的数学系，完全从抽象的方式来构建整个线性代数知识体系，但又没有像一些数学系的教材一样引入过多的群环域等的抽象代数的知识。抽象带来的普氏性使得这本书非常适合用来了解线性代数的一些本质的东西，但线性代数的具体计算可以说完全没有涉及，也没有什么计算技巧。但本人有一个观点：数理的东西，一些计算技巧并不重要，甚至不一定记住式子，有些印象会用就行。在如今，数值计算包括符号计算都可以借助计算机进行处理，概念式子记不住也可以借助互联网快速地了解，知道如何找到知识、知道在哪运用式子远比记得式子、能靠计算技巧手算式子重要的多。搞理论学理论，能不能有新意有趣味性的理解常常比具体的计算更重要（当然，这并不意味着计算完全不重要，实际上很多计算技巧会揭露和运用一些本质的东西和性质）。
+
+**代数(Albegra)** Michael Artin
+
+> 入门抽象代数的非常好的一本书
+
+## 微分几何
+
+**微分几何入门与广义相对论** 梁灿彬
+> 同下面物理-广义相对论中的推荐。国内针对非数学系介绍微分几何的公认的最好的书籍，单学微分几何可以只看看上册的前几章，内容很详细充实，富有梁灿彬老师严谨细致的风格。
+
+**可视化微分几何和形式(Visual Differential Geometry and Forms)** Tristan Needham 
+
+### 微积分计算技巧
+
+**积分的方法与技巧** 金玉明
+
+### 工具书
+
+**特殊函数概论** 王竹溪、郭敦仁
+
+**积分、级数和乘积表** I. S. Gradshteyn and I. M. Ryzhik
+
 ## 物理
 
 ### 理论力学
@@ -33,7 +62,7 @@ To Do
 
 **量子力学概论(Introduction to Quantum Mechanics)** David J. Griffiths
 
-**现代量子力学 (Advanced Quantum Mechanics)** J. J. Sakurai 
+**现代量子力学(Advanced Quantum Mechanics)** J. J. Sakurai 
 
 ### 广义相对论
 
@@ -44,7 +73,5 @@ To Do
 **A First Course in General Relativity** Bernard Schutz
 
 **引力与时空(Gravitation and Spacetime)** Ohanian H. C. and Ruffini R.
-
-## 数学
 
 
