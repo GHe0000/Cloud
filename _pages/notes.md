@@ -23,7 +23,7 @@ redirect_from:
 
 ## 高等数学笔记及随想
 
-下载链接：<https://ghe0000.github.io/Cloud/files/MathNote.pdf>
+下载链接：<https://ghe0000.github.io/Cloud/files/Calculus.pdf>
 
 > Don’t just read it; fight it! —— Paul Halmos
 
