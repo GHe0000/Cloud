@@ -7,11 +7,18 @@ redirect_from:
   - /markdown.html
 ---
 
-这里整理收集了我写的一些笔记、讲义等文档：
+这里整理收集了我写的一些笔记、讲义等文档（更新时间：2024-10-7）：
 
+## 高数反例集
+
+下载链接：<https://ghe0000.github.io/Cloud/files/CounterExample.pdf>
+
+收集一些有趣的反例，使用 Typst 编写.
+
+更新中，参照 CC 4.0 BY-NC 进行共享。**请不要将本文档上传至任意的公共平台（如百度文库等）**
 ## 线性代数笔记
 
-下载链接：<https://ghe0000.github.io/Cloud/files/Linear%20Algebra.pdf>
+下载链接：<https://ghe0000.github.io/Cloud/files/LinearAlgebra.pdf>
 
 > 从抽象开始学习，越学越简单。
 
