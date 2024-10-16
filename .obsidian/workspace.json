@@ -13,9 +13,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-10-7-gcd和lcm.md",
+                "file": "_posts/2024-10-9-序列点、副作用与 UB.md",
                 "mode": "source",
-                "source": false
+                "source": true
               }
             }
           }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-10-7-gcd和lcm.md",
+                "file": "_posts/2024-10-9-序列点、副作用与 UB.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-10-7-gcd和lcm.md",
+                "file": "_posts/2024-10-9-序列点、副作用与 UB.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-10-7-gcd和lcm.md"
+                "file": "_posts/2024-10-9-序列点、副作用与 UB.md"
               }
             }
           }
@@ -149,9 +149,20 @@
   "active": "a6df383d9effd889",
   "lastOpenFiles": [
     "_posts/2024-10-8-质数.md",
+    "_posts/2024-10-9-序列点、副作用与 UB.md",
+    "_posts/2023-7-20-指标法.md",
     "_posts/2023-9-10-四元数.md",
-    "_posts/2024-10-7-gcd和lcm.md",
     "_posts/2024-7-5-傅科摆与微分几何.md",
+    "_posts/2024-10-7-gcd和lcm.md",
+    "_posts/2023-9-6-网站整理收集.md",
+    "_posts/2023-7-17-随想.md",
+    "_posts/2021-8-11-计算机解一维定态薛定谔方程.md",
+    "_posts/2021-2-13-GCore.md",
+    "_posts/2021-1-25-Verilog.md",
+    "_posts/2018-12-7-DeepDream.md",
+    "_posts/2018-8-29-Makedown.md",
+    "_posts/2018-7-20-Mathjax-with-jekyll.md",
+    "_posts/2018-7-20-excerpts.md",
     "_pages/notes.md",
     "files/LinearAlgebra.pdf",
     "files/CounterExample.pdf",
