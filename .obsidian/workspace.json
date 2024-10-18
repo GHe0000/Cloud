@@ -4,49 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "1bd63d6ccb41f685",
-        "type": "split",
+        "id": "9771034490d1c2e7",
+        "type": "tabs",
         "children": [
           {
-            "id": "489c640696f298ba",
-            "type": "tabs",
-            "dimension": 27.430555555555557,
-            "children": [
-              {
-                "id": "a6df383d9effd889",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "_posts/2018-8-29-Makedown.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
+            "id": "9b9e5dd39d26594e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_posts/2024-10-18-scanf 与空白字符.md",
+                "mode": "source",
+                "source": false
               }
-            ]
-          },
-          {
-            "id": "9771034490d1c2e7",
-            "type": "tabs",
-            "dimension": 72.56944444444444,
-            "children": [
-              {
-                "id": "9b9e5dd39d26594e",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "_posts/2024-10-18-scanf与空白字符.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              }
-            ]
+            }
           }
-        ],
-        "direction": "horizontal"
+        ]
       }
     ],
     "direction": "vertical"
@@ -96,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "b0215213ed6d016f",
@@ -112,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-10-18-scanf与空白字符.md",
+                "file": "_posts/2024-10-18-scanf 与空白字符.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -129,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-10-18-scanf与空白字符.md",
+                "file": "_posts/2024-10-18-scanf 与空白字符.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -152,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-10-18-scanf与空白字符.md"
+                "file": "_posts/2024-10-18-scanf 与空白字符.md"
               }
             }
           }
@@ -173,10 +147,10 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "62001a2106229121",
+  "active": "9b9e5dd39d26594e",
   "lastOpenFiles": [
     "_posts/2018-8-29-Makedown.md",
-    "_posts/2024-10-18-scanf与空白字符.md",
+    "_posts/2024-10-18-scanf 与空白字符.md",
     "_posts/2018-7-20-Mathjax-with-jekyll.md",
     "_drafts/2024-10-8-质数.md",
     "_posts/2021-8-11-计算机解一维定态薛定谔方程.md",
