@@ -152,6 +152,7 @@ include:
   - files
   - pic
   - sekai-stickers
+  - pdfjs
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
