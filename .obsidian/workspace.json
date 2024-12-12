@@ -13,15 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_pages/notes.md",
+                "file": "_drafts/2024-10-8-质数.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "notes"
+              "title": "2024-10-8-质数"
+            }
+          },
+          {
+            "id": "2d97ca01f5a7c960",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_drafts/Note Of CTF.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Note Of CTF"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -173,8 +188,13 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "687eb0b95170850d",
+  "active": "2d97ca01f5a7c960",
   "lastOpenFiles": [
+    "_drafts/2024-10-8-质数.md",
+    "_drafts/Note Of CTF.md",
+    "_drafts/post-draft.md",
+    "_drafts/2024-10-9-序列点、副作用与 UB.md",
+    "_pages/notes.md",
     "_pages/book-list.md",
     "_posts/2024-10-19-转义字符表.md",
     "_posts/2024-10-7-gcd和lcm.md",
@@ -182,27 +202,22 @@
     "files/2023NJU强基.pdf",
     "_posts/2018-8-29-Makedown.md",
     "_posts/2018-7-20-Mathjax-with-jekyll.md",
-    "_drafts/2024-10-8-质数.md",
     "_posts/2021-8-11-计算机解一维定态薛定谔方程.md",
     "_posts/2023-7-17-随想.md",
     "_posts/2024-7-5-傅科摆与微分几何.md",
     "_posts/2023-9-10-四元数.md",
     "_posts/2023-9-6-网站整理收集.md",
-    "_drafts/2024-10-9-序列点、副作用与 UB.md",
-    "_drafts/post-draft.md",
     "_posts/2023-7-20-指标法.md",
     "_posts/2021-2-13-GCore.md",
     "_posts/2021-1-25-Verilog.md",
     "_posts/2018-12-7-DeepDream.md",
     "_posts/2018-7-20-excerpts.md",
-    "_pages/notes.md",
     "files/LinearAlgebra.pdf",
     "files/CounterExample.pdf",
     "_pages/about.md",
     "_pages/archive-layout-with-content.md",
     "_pages/cv.md",
     "_pages/non-menu-page.md",
-    "_pages/publications.md",
-    "_pages/sitemap.md"
+    "_pages/publications.md"
   ]
 }
