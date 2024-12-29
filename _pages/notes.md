@@ -11,7 +11,8 @@ redirect_from:
 
 ## 线性代数笔记
 
-下载链接：<https://ghe0000.github.io/Cloud/files/LinearAlgebra.pdf>
+[下载链接](https://ghe0000.us.kg/files/LinearAlgebra.pdf)
+[在线阅读](https://ghe0000.us.kg/pdfjs/web/viewer.html?file=/files/LinearAlgebra.pdf)
 
 > 从抽象开始学习，越学越简单。
 
@@ -23,7 +24,8 @@ redirect_from:
 
 ## 高等数学笔记及随想
 
-下载链接：<https://ghe0000.github.io/Cloud/files/Calculus.pdf>
+[下载链接](https://ghe0000.us.kg/files/Calculus.pdf)
+[在线阅读](https://ghe0000.us.kg/pdfjs/web/viewer.html?file=/files/Calculus.pdf)
 
 > Don’t just read it; fight it! —— Paul Halmos
 
@@ -33,7 +35,8 @@ redirect_from:
 
 ## 2023 南京大学强基计划回忆试题
 
-下载链接：<https://ghe0000.github.io/Cloud/files/2023NJU强基.pdf>
+[下载链接](https://ghe0000.us.kg/files/2023NJU强基.pdf)
+[在线阅读](https://ghe0000.us.kg/pdfjs/web/viewer.html?file=/files/2023NJU强基.pdf)
 
 这是笔者参加 2023 南京大学强基计划（非破格）后回忆的题目，包含了笔试题目（部分选项没有回忆出来）和笔者当时抽到的面试题目，应该是全网最全。
 
@@ -56,7 +59,8 @@ redirect_from:
 
 ## 相对论科普讲义
 
-下载链接：<https://ghe0000.github.io/Cloud/files/SR科普.pdf>
+[下载链接](https://ghe0000.us.kg/files/SR科普.pdf)
+[在线阅读](https://ghe0000.us.kg/pdfjs/web/viewer.html?file=/files/SR科普.pdf)
 
 这是笔者在高中时期原本计划的一个有关狭义相对论的科普讲座的大纲，其中引入了四维时空观和时空间隔，并基本通过时空间隔进行公式的推导，展示了相对论的简洁与深刻。
 

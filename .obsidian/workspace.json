@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_drafts/Note Of CTF.md",
-                "mode": "source",
-                "source": false
+                "file": "_pages/notes.md",
+                "mode": "preview",
+                "source": true
               },
               "icon": "lucide-file",
-              "title": "Note Of CTF"
+              "title": "notes"
             }
           }
         ],
@@ -191,12 +191,12 @@
   },
   "active": "2d97ca01f5a7c960",
   "lastOpenFiles": [
-    "_drafts/2024-10-8-质数.md",
-    "_drafts/Note Of CTF.md",
-    "_drafts/post-draft.md",
-    "_drafts/2024-10-9-序列点、副作用与 UB.md",
-    "_pages/notes.md",
     "_pages/book-list.md",
+    "_drafts/Note Of CTF.md",
+    "_drafts/2024-10-9-序列点、副作用与 UB.md",
+    "_drafts/2024-10-8-质数.md",
+    "_drafts/post-draft.md",
+    "_pages/notes.md",
     "_posts/2024-10-19-转义字符表.md",
     "_posts/2024-10-7-gcd和lcm.md",
     "_posts/2024-10-18-scanf 与空白字符.md",
