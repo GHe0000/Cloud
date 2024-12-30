@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_pages/notes.md",
+                "file": "_pages/terms.md",
                 "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "notes"
+              "title": "terms"
             }
           }
         ],
@@ -189,14 +189,22 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "2d97ca01f5a7c960",
+  "active": "62001a2106229121",
   "lastOpenFiles": [
+    "新建 文本文档.txt",
+    "_pages/sitemap.md",
+    "_pages/publications.md",
+    "_pages/notes.md",
+    "_pages/non-menu-page.md",
+    "_pages/cv.md",
     "_pages/book-list.md",
+    "_pages/archive-layout-with-content.md",
+    "_pages/404.md",
+    "_pages/about.md",
     "_drafts/Note Of CTF.md",
     "_drafts/2024-10-9-序列点、副作用与 UB.md",
     "_drafts/2024-10-8-质数.md",
     "_drafts/post-draft.md",
-    "_pages/notes.md",
     "_posts/2024-10-19-转义字符表.md",
     "_posts/2024-10-7-gcd和lcm.md",
     "_posts/2024-10-18-scanf 与空白字符.md",
@@ -210,15 +218,7 @@
     "_posts/2023-9-6-网站整理收集.md",
     "_posts/2023-7-20-指标法.md",
     "_posts/2021-2-13-GCore.md",
-    "_posts/2021-1-25-Verilog.md",
-    "_posts/2018-12-7-DeepDream.md",
-    "_posts/2018-7-20-excerpts.md",
     "files/LinearAlgebra.pdf",
-    "files/CounterExample.pdf",
-    "_pages/about.md",
-    "_pages/archive-layout-with-content.md",
-    "_pages/cv.md",
-    "_pages/non-menu-page.md",
-    "_pages/publications.md"
+    "files/CounterExample.pdf"
   ]
 }
