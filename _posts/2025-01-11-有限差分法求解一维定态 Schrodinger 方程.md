@@ -23,19 +23,19 @@ tags:
 
 $$ 
 \begin{aligned}
-y'(x) &= \lim_{\Delta x \to 0} \frac{y(x+\Delta x) - y(x)}{\Delta x}
+y'(x) &= \lim_{\Delta x \to 0} \frac{y(x+\Delta x) - y(x)}{\Delta x} \\
       &\approx \frac{y(x+\Delta x)-y(x)}{\Delta x}
 \end{aligned}
 $$
 
 这里的 $\Delta x$ 即为**步长**，其影响了微分近似的精确程度，步长越小，近似越精确.
 
-### 高阶差分近似
+### 差分公式推导
 
 一般地，对于函数 $y(x)$，若在求解域内连续可导，由 Taylor 展开我们可以得到：
 
 $$
-y(x+h) = y(x) + y'(x) h + \frac{1}{2} y''(x) h^2 + \cdots + \frac{1}{n!} y^{(n)} (x) h^n + \frac{1}{(n+1)!} y^{(n+1)} (x+\ksi) h^{n+1}
+y(x+h) = y(x) + y'(x) h + \frac{1}{2} y''(x) h^2 + \cdots + \frac{1}{n!} y^{(n)} (x) h^n + \frac{1}{(n+1)!} y^{(n+1)} (x+\xi) h^{n+1}
 $$
 
 对上面 Taylor 展开进行适当的截断，我们就可以得到各阶微分的近似表达式，下面主要对一阶、二阶进行讨论：
@@ -43,20 +43,22 @@ $$
 对于一阶，我们可以写为：
 
 $$
-y(x+h) \approx y(x) + y'(x) h + \frac{1}{2} y''(x+\ksi) h^2
+y(x+h) \approx y(x) + y'(x) h + \frac{1}{2} y''(x+\xi) h^2
 $$
 
-因此，可以解得一阶微分的向前差分公式
+因此，可以解得一阶微分的向前差分公式：
+$$y'_F(x) \approx \frac{y(x+h)-y(x)}{h}$$
+将上式中 $h$ 替换成 $-h$，便可以得到一阶微分的向后差分公式：
+$$y'_B(x) \approx \frac{y(x)-y(x-h)}{h}$$
+联立上面两式，便可以得到一阶差分的中心差分形式：
+$$ y'_C(x) \approx \frac{y(x+h)-y(x-h)}{2h}$$
+类似地，对于高阶导数的差分近似，我们也可以用类似的方法得到，若我们保留到 Taylor 展开的二次项，便可以得到：
+$$y''(x) \approx \frac{2(y(x+h)-y(x)-y'(x) h)}{h^2}$$
+将 $h$ 替换成 $-h$，并同上式联立，我们就可以得到二阶差分的中心差分形式：
+$$ y''(x) \approx \frac{y(x+h)-2y(x)+y(x-h)}{h^2} $$
+对于更高阶导数的差分近似，也可以用类似的方法求解.
 
-
-对于高阶导数，我们也可以用类似的方法进行近似：对于 $\Delta^x y / \Delta x^2$，其可以通过如下式子进行近似：
-
-$$
-\begin{aligned}
-y''(x) &= \
-\end{aligned}
-$$
-
+另外，不同的差分公式会带来不同的求解误差，从而产生不一样的求解效果. 一般而言，中心差分的精度较高，误差较小，因此我们一般选择使用中心差分.
 ## 求解一维定态 Schrodinger 方程
 
 对于定态薛定谔方程
