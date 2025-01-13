@@ -73,50 +73,122 @@ $$ y''(x) \approx \frac{y(x+h)-2y(x)+y(x-h)}{h^2} $$
 
 ## 求解一维定态 Schrodinger 方程
 
-对于定态薛定谔方程
+### 理论推导
 
-$$H\psi=E\psi$$
+求解一维定态 Schrodinger 方程，也就是求解下面的方程：
 
-其中
+$$H \psi(x) = E \psi(x)$$
 
-$$H = -\frac{\hbar^2}{2m}\frac{d^2}{dx^2}+V$$  
+其中算符 $H$ 为：
 
-记
+$$H = -\frac{\hbar^2}{2m}\frac{\mathrm{d}^2}{\mathrm{d} x^2}+V$$ 
+而能量 $E$ 为一个标量. 上式可以发现其很像特征方程的形式（实际上在教材的计算中我们常常将函数当成 Hilbert 空间中的一个向量，然后还是通过特征方程那一套来分析），因此我们可以考虑将坐标 $x$ 离散化成一个一维向量：
 
-$$C_1 = -\frac{\hbar^2}{2m}$$
+$$ x=(x_1,x_2,x_3,\dots,x_n)^T $$
 
-对$$\frac{d^2}{dx^2}$$差分得  
+其中，记 $\Delta x = x_{i+1} - x_i$，为步长. 因此，波函数 $\psi(x)$ 就可以表示为：
 
-$$
-\frac{d^2}{dx^2} \approx \frac{\psi_{i+1}-2\psi_i+\psi_{i-1}}{\Delta x^2}
-$$  
+$$\psi = (\psi(x_1),\psi(x_2),\psi(x_3),\dots,\psi(x_n))^T$$
 
-上式可改为矩阵形式，则定态薛定谔方程可改写为$$H\Psi = E\Psi$$  
-
-其中
+根据前文，通过二阶差分的中心差分形式来代替算符 $H$ 中的的二阶导，故有：
 
 $$
-\Psi = 
+\begin{aligned}
+\frac{\mathrm{d}^2 \psi(x_i)}{\mathrm{d}x^2} \approx& \frac{\psi(x_i+\Delta x) - 2 \psi(x_i) + \psi(x_i - \Delta x)}{\Delta x^2} \\
+\approx& \frac{\psi(x_{i+1}-2\psi(x_i)+\psi(x_{i-1}))}{\Delta x^2}
+\end{aligned}
+$$
+
+对每一个 $\psi(x_i)$ 都使用上式来计算其二阶导，其可以用如下矩阵表示：
+
+$$
+D = \frac{1}{\Delta x^2}
 \begin{bmatrix}
-\psi_1\\
-\psi_2\\
-\vdots
+-2 & 1 & 0 & 0 & \cdots & 0 \\
+1 & -2 & 1 & 0 & \cdots & 0 \\
+0 & 1 & -2 & 1 & \cdots & 0 \\
+\vdots&\vdots&\vdots&\vdots&\ddots & \vdots \\
+0 & 0 & 0 & 0 & \cdots & -2
 \end{bmatrix}
 $$
 
-$$
-H = A + V
-$$
+因此，整个算符 $H$ 可以用如下矩阵表示：
 
-$$
-A = \frac{C_1}{\Delta x^2} * 
-\begin{bmatrix}
--2 & 1 & 0 & 0 & \cdots \\
-1 & -2 & 1 & 0 & \cdots \\
-0 & 1 & -2 & 1 & \cdots \\
-\vdots&\vdots&\vdots&\vdots&\vdots\ \\
-\end{bmatrix}
-$$  
+$$H = -\frac{\hbar^2}{2m \Delta x^2} D + V$$
 
-则该问题简化为求解特征值和特征向量的问题，其中特征值为该能级能量，特征向量为薛定谔方程离散值  
+这里 $V$ 也要改写为矩阵的形式.
 
+  
+上式可改为矩阵形式，则定态薛定谔方程可改写为
+
+通过上述方法，该问题简化为求解特征值和特征向量的问题，其中特征值为该能级能量，特征向量为（离散后的）波函数.
+
+### 程序实现
+
+上述算法的具体程序实现是非常简单的，下面用 Python 具体实现.
+
+首先我们先导入一些计算库，并定义一些常量：
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.sparse import diags, spdiags
+from scipy.sparse.linalg import eigsh
+
+hbar = 1
+m = 1
+X = 10
+N = 200
+dx = 2 * X / N
+En = 9
+```
+
+然后，我们离散化坐标，得到 $x$，并计算每一个坐标的势能，构造出矩阵 $V$（这里以谐振子势为例子）：
+
+```python
+# 离散化空间坐标
+x = np.linspace(-X, X, N)
+
+v = 0.5 * x**2
+V = diags(v, 0)
+```
+
+之后，我们根据前文的公式来构造对角的差分矩阵，并以此进一步构造算符 $H$：
+
+```python
+A = np.ones(N)
+D = spdiags([1 * A, -2 * A, 1 * A], [-1, 0, 1], N, N)
+D = (-(hbar**2) / (2 * m)) * (1 / dx**2) * D
+
+H = D + V
+```
+
+然后，我们计算特征值及特征向量，这里由于矩阵中大部分为 $0$，为减小计算量，我们使用针对稀疏矩阵优化的计算特征值和特征向量的函数：
+
+```python
+Val, Vec = eigsh(H, k=En, which='SA')
+```
+
+后面绘图，显示结果：
+
+```python
+for i in range(En):
+    psi = Vec[:, i]
+    E = Val[i]
+    ax1 = plt.subplot(3, 3, i + 1)
+    ax1.plot(x, psi**2 / np.sum(psi**2 * dx), label=r'$|\Psi(x)|^2$', color='g')
+    ax1.set_xlabel('x')
+    ax1.set_ylabel(r'$|\Psi(x)|^2$', color='g')
+    ax1.tick_params(axis='y', labelcolor='g')
+    ax1.grid(True)
+
+    ax2 = ax1.twinx()
+    ax2.plot(x, v, label='V(x)', color='b')
+    ax2.set_ylabel('V(x)', color='b')
+    ax2.tick_params(axis='y', labelcolor='b')
+    
+    plt.title(f'n={i+1} E={E:.3f}')
+
+plt.subplots_adjust(hspace=0.5, wspace=0.5)
+plt.show()
+```
