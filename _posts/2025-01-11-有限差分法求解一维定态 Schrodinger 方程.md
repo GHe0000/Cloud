@@ -2,7 +2,6 @@
 title: 有限差分法求解一维定态 Schrodinger 方程
 toc: true
 categories:
-  - 物理
   - 数值计算
 tags:
   - 薛定谔方程
