@@ -1,6 +1,5 @@
 ---
 title: Excerpts
-categories: 网站测试
 ---
 
 The following contents should be invisible in home/archive page.

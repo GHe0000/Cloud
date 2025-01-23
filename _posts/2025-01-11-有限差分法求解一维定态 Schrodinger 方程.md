@@ -2,7 +2,6 @@
 title: 有限差分法求解一维定态 Schrodinger 方程
 toc: true
 categories:
-  - 物理
   - 数值计算
 tags:
   - 薛定谔方程
@@ -82,6 +81,7 @@ $$H \psi(x) = E \psi(x)$$
 其中算符 $H$ 为：
 
 $$H = -\frac{\hbar^2}{2m}\frac{\mathrm{d}^2}{\mathrm{d} x^2}+V$$ 
+
 而能量 $E$ 为一个标量. 上式可以发现其很像特征方程的形式（实际上在教材的计算中我们常常将函数当成 Hilbert 空间中的一个向量，然后还是通过特征方程那一套来分析），因此我们可以考虑将坐标 $x$ 离散化成一个一维向量：
 
 $$ x=(x_1,x_2,x_3,\dots,x_n)^T $$
