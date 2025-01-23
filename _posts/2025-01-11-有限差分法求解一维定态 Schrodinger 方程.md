@@ -192,3 +192,20 @@ for i in range(En):
 plt.subplots_adjust(hspace=0.5, wspace=0.5)
 plt.show()
 ```
+
+### 绘图
+
+使用上述方法绘制的谐振子势的前 9 个定态图像及其对应的能量与解析解的对比（图片中绿色虚线为计算的结果，红色实线为解析解的绘图，$E$ 为计算得出的该定态的能量，$E_{exact}$ 为解析解计算得到的对应的能量，下图同）
+
+<p align="center">
+<!--<img src="/Cloud/pic/2024-7-5/01.png" width="70%" >-->
+<img src="/pic/2025-1-23/Q2.png" width="70%" >
+</p>
+
+使用上述方法绘制的无穷深方势阱的前 9 个定态图像及其对应的能量与解析解的对比（在程序实现中使用 $10^{10}$ 来模拟无穷大）
+
+<p align="center">
+<!--<img src="/Cloud/pic/2024-7-5/01.png" width="70%" >-->
+<img src="/pic/2025-1-23/Q1.png" width="70%" >
+</p>
+
