@@ -7,7 +7,24 @@ redirect_from:
   - /markdown.html
 ---
 
-这里整理收集了我写的一些笔记、讲义等文档（更新时间：2024-10-7）：
+这里整理收集了我写的一些笔记、讲义等文档（更新时间：2025-1-25）：
+
+
+## 概率论笔记
+
+[下载链接](https://ghe0000.us.kg/files/ProbabilityAndStatistics.pdf)
+[在线阅读](https://ghe0000.us.kg/pdfjs/web/viewer.html?file=/files/ProbabilityAndStatistics.pdf)
+
+## 高等数学笔记及随想
+
+[下载链接](https://ghe0000.us.kg/files/Calculus.pdf)
+[在线阅读](https://ghe0000.us.kg/pdfjs/web/viewer.html?file=/files/Calculus.pdf)
+
+> Don’t just read it; fight it! —— Paul Halmos
+
+这是笔者在预科期间学习同济高等数学时整理的笔记和随想。虽然是在学习同济的高等数学时写下的笔记，但其内容基本上与教材没有什么关联，更多是一些方便的解题技巧，一些笔者认为具有启发意义的新颖的理解。因此本笔记中并没有避讳一些更“高级”的数学。
+
+暂停更新，参照 CC 4.0 BY-NC 进行共享。**请不要将本文档上传至任意的公共平台（如百度文库等）**
 
 ## 线性代数笔记
 
@@ -21,17 +38,6 @@ redirect_from:
 另外这篇笔记使用的是 Typst 而不是 LaTeX，虽然笔记所用的 Typst 文档是自己模仿 LaTeX 制作的（Typst 比较麻烦的是没有像 LaTeX 一样的功能比较齐全的默认文档类，需要自己实现），但一些风格还是可能会和 LaTeX 不同。
 
 慢速更新中，参照 CC 4.0 BY-NC 进行共享。**请不要将本文档上传至任意的公共平台（如百度文库等）**
-
-## 高等数学笔记及随想
-
-[下载链接](https://ghe0000.us.kg/files/Calculus.pdf)
-[在线阅读](https://ghe0000.us.kg/pdfjs/web/viewer.html?file=/files/Calculus.pdf)
-
-> Don’t just read it; fight it! —— Paul Halmos
-
-这是笔者在预科期间学习同济高等数学时整理的笔记和随想。虽然是在学习同济的高等数学时写下的笔记，但其内容基本上与教材没有什么关联，更多是一些方便的解题技巧，一些笔者认为具有启发意义的新颖的理解。因此本笔记中并没有避讳一些更“高级”的数学。
-
-暂停更新，参照 CC 4.0 BY-NC 进行共享。**请不要将本文档上传至任意的公共平台（如百度文库等）**
 
 ## 2023 南京大学强基计划回忆试题
 
