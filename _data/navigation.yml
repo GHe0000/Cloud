@@ -22,7 +22,7 @@ main:
     url: /booklist/
 
   - title: "网站收集"
-    url: /webcollect/
+    url: /website-collection/
   
   - title: "笔记分享"
     url: /notes/
