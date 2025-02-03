@@ -21,6 +21,9 @@ main:
   - title: "书单"
     url: /booklist/
 
+  - title: "网站收集"
+    url: /webcollect/
+  
   - title: "笔记分享"
     url: /notes/
 
