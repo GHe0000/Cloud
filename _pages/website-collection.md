@@ -7,21 +7,26 @@ redirect_from:
   - /markdown.html
 ---
 
-这里收集了本人常用的一些工具网站的链接.
+这里收集了本人常用的一些工具网站的链接（更新时间：2025-2-5）
 
 ## 电子书查找&下载
 
 - [Library Genesis (免费电子书下载)](https://libgen.click/)
 - [Library Genesis (免费电子书下载)](https://libgen.top/)
-- [Z-Library Project (免费电子书下载)](https://singlelogin.re/)
+- [Z-Library Project (免费电子书下载)](https://zh.z-lib.gs/)
 
 ## 论文查找&下载
+
+- [Google Scholar (学术搜索)](https://scholar.google.com/)
+- [谷粉学术 (学术搜索)](https://gfsoso.99lb.net/)
+- [ResearchGate (学术搜索)](https://www.researchgate.net/search/publications)
 
 - [arXiv.org (全球最大预印本网站)](https://arxiv.org/)
 - [Crossref Metadata Search (论文DOI查询)](https://search.crossref.org/)
 - [Library Genesis • scientific articles (免费论文下载)](http://libgen.rs/scimag/)
 - [Sci-Hub (免费论文下载)](https://sci-hub.hkvisa.net/)（网址不稳定）
 - [谷粉学术论坛-文献互助](http://bbs.99lb.net/)
+- [PubScholar公益平台](https://pubscholar.cn/)
 
 ## 打字练习
 
@@ -35,9 +40,11 @@ redirect_from:
 - [Microsoft 365](https://www.office.com)
 
 ## 示意图绘制
+
 - [Mathcha (可视化 Tikz 绘图)](https://www.mathcha.io/)
 - [Draw IO (流程图、示意图绘制)](https://draw.io/)
 - [MarkMap (将 Markdown 转为思维导图)](https://markmap.js.org/repl)
+- [Excalidraw (手绘风格示意图)](https://excalidraw.com/)
 
 ## 网页工具
 
@@ -48,8 +55,8 @@ redirect_from:
 ## 搜索相关
 
 - [Google 浙大镜像](https://g.luciaz.me/) (三个问题的答案：心灵之约、水朝夕、csxy@123)
-- [谷粉学术 (论文收集)](https://gfsoso.99lb.net/)
 - [Approach Zero (LaTeX 公式搜索)](https://approach0.xyz/search/)
+- [中国搜索](https://www.chinaso.com/)
 
 ## AI工具
 
@@ -57,14 +64,18 @@ redirect_from:
 - [Remove (AI抠图)](https://www.remove.bg/zh/upload)
 - [稿定设计 (AI图像处理)](https://www.gaoding.com/)
 - [AI Polish (AI阅读&AI润色)](https://polish.readpaper.com/welcome)
+- [免费音频转文本](https://converter.app/cn/audio-text/)
+- [免费音频转文本2](https://www.audio2edit.com/zh/speech-to-text)
 
 ## 设计
+
 - [ColorMind (AI配色)](http://colormind.io/)
 - [BrandMark (AI Logo设计)](https://brandmark.io/)
 
 ## 杂七杂八
+
 - [赛博刮刮乐](https://www.lottery.gov.cn/xdgg/sgty/)
 - [网页 Linux 虚拟机](https://webvm.io/)
 - [Virustotal (在线查毒)](https://www.virustotal.com/gui/home/upload)
-
-
+- [Mozilla Paste (代码片段分享)](https://paste.mozilla.org/)
+- [PJSK 表情 (已删除了广告)](https://ghe0000.us.kg/sekai-stickers/index)
