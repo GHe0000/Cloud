@@ -34,12 +34,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       
+      # 通过将单个 $ 符号替换为两个 $ 符号来解决 MathJax 公式渲染问题
       - name: Fix Math
         run: |
           pwd
-          ls
           find _posts -name "*.md" -exec perl -pi -e 's/(?<!\$)\$(?!\$)/\$\$/g' {} \;
-          cat _posts/2025-2-7-常数变易法.md
 
       - name: Setup Ruby
         # https://github.com/ruby/setup-ruby/releases/tag/v1.207.0
