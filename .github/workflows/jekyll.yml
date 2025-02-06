@@ -37,8 +37,9 @@ jobs:
       - name: Fix Math
         run: |
           pwd
-          chmod -x fix_math.sh
-          ./fix_math.sh 
+          ll
+          find _posts -name "*.md" -exec perl -pi -e 's/(?<!\$)\$(?!\$)/\$\$/g' {} \;
+          cat _posts/2025-2-7-常数变易法.md
 
       - name: Setup Ruby
         # https://github.com/ruby/setup-ruby/releases/tag/v1.207.0
