@@ -11,7 +11,7 @@ redirect_from:
 
 ## 常用编程语言
 
-- 主力编程语言：Python、C
+- 主力编程语言：Python、C++
 - 符号计算：Mathematica
 - 文档：Typst、LaTeX
 - 笔记：Markdown
@@ -19,6 +19,10 @@ redirect_from:
 ## 个人项目
 
 这里记录了本人制作的一些小项目的仓库链接：
+
+**BlackHoleSim**: 一个个人的练手项目，用 C++ 实现一个 Schwarzschild 时空的光追，并渲染一个黑洞的吸积盘图像.
+
+<https://github.com/GHe0000/BlackHoleSim>
 
 **Bongocat-python**：一个基于 Python 和 OpenGL 复刻的 Bongocat，包含了鼠标追踪和基于 Bezier 曲线的手臂绘制.
 
