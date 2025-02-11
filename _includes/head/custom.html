@@ -28,8 +28,6 @@
 <style>
   html {
     scroll-padding-top: 70px !important; /* 与导航栏实际高度一致 */
-    
-    /* 可选：添加平滑滚动效果 */
     scroll-behavior: smooth;
   }
 </style>
@@ -38,6 +36,7 @@
 
 <script>
 MathJax = {
+  loader: {load: ['[tex]/ams', '[tex]/physics']},
   tex: {
     inlineMath: [['$', '$'], ['\\(', '\\)']],
     tags: 'ams'
