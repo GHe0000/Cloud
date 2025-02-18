@@ -15,7 +15,7 @@ redirect_from:
 - [Library Genesis](https://libgen.gs/)
 - [Z-Library Project](https://zh.z-lib.gs/)
 - [Anna's Archive](https://annas-archive.org/)
-- [广西图书馆](https://www.gxlib.org.cn/)
+- [广西图书馆(内有读秀和超星的包库图书)](https://www.gxlib.org.cn/)
 
 ## 论文查找&下载
 
