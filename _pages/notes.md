@@ -16,6 +16,9 @@ redirect_from:
 [下载链接](https://ghe0000.us.kg/files/ProbabilityAndStatistics.pdf)
 [在线阅读](https://ghe0000.us.kg/pdfjs/web/viewer.html?file=/files/ProbabilityAndStatistics.pdf)
 
+[下载链接2](/files/ProbabilityAndStatistics.pdf)
+[在线阅读2](/pdfjs/web/viewer.html?file=/files/ProbabilityAndStatistics.pdf)
+
 ### 高等数学笔记及随想
 
 [下载链接](https://ghe0000.us.kg/files/Calculus.pdf)
