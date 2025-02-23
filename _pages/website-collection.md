@@ -80,4 +80,5 @@ redirect_from:
 - [网页 Linux 虚拟机](https://webvm.io/)
 - [Virustotal (在线查毒)](https://www.virustotal.com/gui/home/upload)
 - [Mozilla Paste (代码片段分享)](https://paste.mozilla.org/)
-- [PJSK 表情 (已删除了广告)](https://ghe0000.us.kg/sekai-stickers/index)
+- [NetCut (网络剪切板)](https://netcut.cn/)
+- [PJSK 表情生成 (部署在本网站，已删除了广告)](/sekai-stickers/index)
