@@ -14,7 +14,7 @@ title                    : "Cloud"
 title_separator          : "-"
 name                     : &name "Guotao He"
 description              : &description "personal description"
-url                      : https://ghecloud.pp.ua
+url                      : https://ghe0000.pp.ua
 # url                      : https://ghe0000.us.kg
 # url                      : https://ghe0000.github.io/Cloud # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
