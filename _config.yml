@@ -8,13 +8,12 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Cloud"
+site_theme               : "default"
+title                    : "Your Name / Site Title"
 title_separator          : "-"
-name                     : &name "Guotao He"
+name                     : &name "Your Name"
 description              : &description "personal description"
-url                      : https://ghe0000.pp.ua
-# url                      : https://ghe0000.us.kg
-# url                      : https://ghe0000.github.io/Cloud # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://ghe0000.us.kg # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "academicpages/academicpages.github.io"
 
@@ -24,21 +23,21 @@ repository               : "academicpages/academicpages.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Guotao He"
-  pronouns         : # example: "she/her"
-  bio              : "暂时没想好的介绍"
+  name             : "Your Sidebar Name"
+  pronouns         : # example: "she/her"  
+  bio              : "Short biography for the left-hand sidebar"
   location         : "Earth"
-  employer         : "Xiamen University"
-  uri              : https://ghe0000.github.io/Cloud/
-  email            : "guotao.he.0000@outlook.com"
+  employer         : "Red Brick University"
+  uri              : # URL
+  email            : "none@example.org" 
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : #"https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+  googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
   impactstory      : # URL
-  orcid            : #"http://orcid.org/yourorcidurl"
+  orcid            : "http://orcid.org/yourorcidurl"
   semantic         : # URL
-  pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   researchgate     : # URL
   scopus           : # URL
 
@@ -46,12 +45,12 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "GHe0000"
+  github           : "academicpages"
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
   # Social media
-  bluesky          : #"bsky.app" # Replace this with you Bluesky username
+  bluesky          : "bsky.app" # Replace this with you Bluesky username
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
@@ -158,9 +157,6 @@ include:
   - .htaccess
   - _pages
   - files
-  - pic
-  - sekai-stickers
-  - pdfjs
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
