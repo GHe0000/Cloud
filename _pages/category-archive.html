@@ -6,48 +6,6 @@ author_profile: true
 ---
 
 {% include base_path %}
-
-
-
-{% include base_path %}
-
-<!-- 顶部导航栏 -->
-<ul class="taxonomy__index">
-  {% comment %} 过滤有效集合并统计数量 {% endcomment %}
-  {% assign valid_collections = site.collections 
-    | where_exp: "col", "col.output != false" 
-    | where_exp: "col", "col.label != 'posts'" %}
-
-  {% for collection in valid_collections %}
-    <li>
-      <a href="#{{ collection.label | slugify }}">
-        <strong>{{ collection.label }}</strong>
-        <span class="taxonomy__count">{{ collection.docs | size }}</span>
-      </a>
-    </li>
-  {% endfor %}
-</ul>
-
-<!-- 主体内容区域 -->
-{% assign entries_layout = page.entries_layout | default: 'list' %}
-
-{% for collection in valid_collections %}
-  <section id="{{ collection.label | slugify }}" class="taxonomy__section">
-    <h2 class="archive__subtitle">{{ collection.label }}</h2>
-    
-    <div class="entries-{{ entries_layout }}">
-      {% for post in collection.docs %}
-        {% include archive-single.html type=entries_layout %}
-      {% endfor %}
-    </div>
-
-    <a href="#page-title" class="back-to-top">
-      {{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;
-    </a>
-  </section>
-{% endfor %}
-
-
 {% include group-by-array collection=site.posts field="categories" %}
 
 {% for category in group_names %}
