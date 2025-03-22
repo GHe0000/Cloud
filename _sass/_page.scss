@@ -329,11 +329,11 @@
 
 .taxonomy__title {
   margin-bottom: 0.5em;
-  color: $muted-text-color;
+  color: mix(#fff, $gray, 25%);
 }
 
 .taxonomy__count {
-  color: $muted-text-color;
+  color: mix(#fff, $gray, 25%);
 }
 
 .taxonomy__index {
@@ -366,7 +366,7 @@
 .back-to-top {
   display: block;
   clear: both;
-  color: $muted-text-color;
+  color: mix(#fff, $gray, 25%);
   font-size: 0.6em;
   text-transform: uppercase;
   text-align: end;
