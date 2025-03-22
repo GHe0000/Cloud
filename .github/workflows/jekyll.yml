@@ -33,13 +33,11 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      
       # 通过将单个 $ 符号替换为两个 $ 符号来解决 MathJax 公式渲染问题
       - name: Fix Math
         run: |
           pwd
           find _posts -name "*.md" -exec perl -pi -e 's/(?<!\$)\$(?!\$)/\$\$/g' {} \;
-
       - name: Setup Ruby
         # https://github.com/ruby/setup-ruby/releases/tag/v1.207.0
         uses: ruby/setup-ruby@4a9ddd6f338a97768b8006bf671dfbad383215f4
