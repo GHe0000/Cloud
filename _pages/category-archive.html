@@ -24,7 +24,7 @@ author_profile: true
 </ul>
 
 {% for category in group_names %}
-  {% assign safe_id = category | slugify: 'latin' | replace: "_", "-" %}
+  {% assign safe_id = category | downcase | replace: " ", "-" | url_encode | replace: "%", "" %}
   {% assign posts = group_items[forloop.index0] %}
   <section id="{{ safe_id }}" class="taxonomy__section">
     <h2 class="archive__subtitle">{{ category }}</h2>
