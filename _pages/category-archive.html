@@ -13,17 +13,20 @@ author_profile: true
 
 <ul class="taxonomy__index">
   {% for category in group_names %}
+    {% assign safe_id = category | slugify: 'latin' | replace: "_", "-" %}
     <li>
-      <a href="#{{ category | slugify }}">
-        <strong>{{ category }}</strong> <span class="taxonomy__count">{{ group_items[forloop.index0] | size }}</span>
+      <a href="#{{ safe_id }}">
+        <strong>{{ category }}</strong> 
+        <span class="taxonomy__count">{{ group_items[forloop.index0] | size }}</span>
       </a>
     </li>
   {% endfor %}
 </ul>
 
 {% for category in group_names %}
+  {% assign safe_id = category | slugify: 'latin' | replace: "_", "-" %}
   {% assign posts = group_items[forloop.index0] %}
-  <section id="{{ category | slugify }}" class="taxonomy__section">
+  <section id="{{ safe_id }}" class="taxonomy__section">
     <h2 class="archive__subtitle">{{ category }}</h2>
     <div class="entries-{{ entries_layout }}">
       {% for post in posts %}
