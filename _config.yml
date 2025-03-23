@@ -14,7 +14,7 @@ title_separator          : "-"
 name                     : &name "Guotao He"
 description              : &description "personal description"
 url                      : https://ghe0000.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
-baseurl                  : "" # the subpath of your site, e.g. "/blog"
+baseurl                  : "/Cloud" # the subpath of your site, e.g. "/blog"
 repository               : ""
 
 # Site Author - The following control what appear as part of the author content on the side bar.
