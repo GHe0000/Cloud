@@ -1,7 +1,7 @@
 ---
 layout: archive
-permalink: /categories/
-title: "Posts by Category"
+permalink: /tags-2/
+title: "Posts by Tags"
 author_profile: true
 ---
 
@@ -9,22 +9,23 @@ author_profile: true
 
 {% assign entries_layout = page.entries_layout | default: 'list' %}
 {% assign filtered_posts = site.posts | where_exp: "item", "item.hidden != true" %}
-{% include group-by-array collection=filtered_posts field="categories" %}
+{% include group-by-array collection=filtered_posts field="tags" %}
 
 <ul class="taxonomy__index">
-  {% for category in group_names %}
+  {% for tag in group_names %}
     <li>
-      <a href="#{{ category | slugify }}">
-        <strong>{{ category }}</strong> <span class="taxonomy__count">{{ group_items[forloop.index0] | size }}</span>
+      <a href="#tag-{{ forloop.index }}">
+        <strong>{{ tag }}</strong> 
+        <span class="taxonomy__count">{{ group_items[forloop.index0] | size }}</span>
       </a>
     </li>
   {% endfor %}
 </ul>
 
-{% for category in group_names %}
+{% for tag in group_names %}
   {% assign posts = group_items[forloop.index0] %}
-  <section id="{{ category | slugify }}" class="taxonomy__section">
-    <h2 class="archive__subtitle">{{ category }}</h2>
+  <section id="tag-{{ forloop.index }}" class="taxonomy__section">
+    <h2 class="archive__subtitle">{{ tag }}</h2>
     <div class="entries-{{ entries_layout }}">
       {% for post in posts %}
         {% include archive-single.html type=entries_layout %}
@@ -32,5 +33,3 @@ author_profile: true
     </div>
   </section>
 {% endfor %}
-
-
