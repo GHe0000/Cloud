@@ -1,5 +1,5 @@
 ---
-layout: archive
+layout: single
 permalink: /categories-test/
 title: "Posts by Category"
 author_profile: true
@@ -12,7 +12,6 @@ author_profile: true
 {% include group-by-array collection=filtered_posts field="categories" %}
 
 {% comment %} 在 taxonomy__index 外层添加与 archive__item 相同的容器 {% endcomment %}
-<div class="page__inner-wrap">
   <ul class="taxonomy__index">
     {% for category in group_names %}
       <li>
@@ -22,7 +21,6 @@ author_profile: true
       </li>
     {% endfor %}
   </ul>
-</div>
 
 {% for category in group_names %}
   {% assign posts = group_items[forloop.index0] %}
