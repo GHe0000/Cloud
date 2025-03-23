@@ -129,6 +129,37 @@ which wil render as:
 **Watch out!** You can also add notices by appending `{: .notice}` to the line following paragraph.
 {: .notice}
 
+**Watch out!** This paragraph of text has been [emphasized](#) with the `{: .notice}` class.
+{: .notice}
+
+**Watch out!** This paragraph of text has been [emphasized](#) with the `{: .notice--primary}` class.
+{: .notice--primary}
+
+**Watch out!** This paragraph of text has been [emphasized](#) with the `{: .notice--info}` class.
+{: .notice--info}
+
+**Watch out!** This paragraph of text has been [emphasized](#) with the `{: .notice--warning}` class.
+{: .notice--warning}
+
+**Watch out!** This paragraph of text has been [emphasized](#) with the `{: .notice--success}` class.
+{: .notice--success}
+
+**Watch out!** This paragraph of text has been [emphasized](#) with the `{: .notice--danger}` class.
+{: .notice--danger}
+
+{% capture notice-text %}
+You can also add the `.notice` class to a `<div>` element.
+
+* Bullet point 1
+* Bullet point 2
+{% endcapture %}
+
+<div class="notice--info">
+  <h4 class="no_toc">Notice Headline:</h4>
+  {{ notice-text | markdownify }}
+</div>
+
+
 ### Footnotes
 
 Footnotes can be useful for clarifying points in the text, or citing information.[^1] Markdown support numeric footnotes, as well as text as long as the values are unique.[^note]
