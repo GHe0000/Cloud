@@ -1,20 +1,3 @@
 <script src="{{ base_path }}/assets/js/main.min.js"></script>
 
 {% include analytics.html %}
-
-// 转义特殊字符选择器
-document.querySelectorAll('.taxonomy__index a[href*="#"]').forEach(anchor => {
-  const rawHash = anchor.getAttribute('href').split('#')[1];
-  try {
-    document.querySelector(`#${CSS.escape(rawHash)}`);
-  } catch (e) {
-    console.warn(`Invalid selector: #${rawHash}, attempting encoding fix...`);
-    const encodedHash = encodeURIComponent(rawHash).replace(/%/g, '-');
-    anchor.setAttribute('href', `#${encodedHash}`);
-    const targetSection = document.getElementById(encodedHash);
-    if (targetSection) {
-      targetSection.id = encodedHash;
-    }
-  }
-});
-

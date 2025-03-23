@@ -13,9 +13,8 @@ author_profile: true
 
 <ul class="taxonomy__index">
   {% for category in group_names %}
-    {% assign safe_id = category | slugify: 'latin' | replace: "_", "-" %}
     <li>
-      <a href="#{{ safe_id }}">
+      <a href="#category-{{ forloop.index }}">
         <strong>{{ category }}</strong> 
         <span class="taxonomy__count">{{ group_items[forloop.index0] | size }}</span>
       </a>
@@ -24,9 +23,8 @@ author_profile: true
 </ul>
 
 {% for category in group_names %}
-  {% assign safe_id = category | downcase | replace: " ", "-" | url_encode | replace: "%", "" %}
   {% assign posts = group_items[forloop.index0] %}
-  <section id="{{ safe_id }}" class="taxonomy__section">
+  <section id="category-{{ forloop.index }}" class="taxonomy__section">
     <h2 class="archive__subtitle">{{ category }}</h2>
     <div class="entries-{{ entries_layout }}">
       {% for post in posts %}
