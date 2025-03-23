@@ -1,0 +1,100 @@
+{% capture tocWorkspace %}
+    {% comment %}
+        Copyright (c) 2017 Vladimir "allejo" Jimenez
+        （保留原始版权声明）
+    {% endcomment %}
+
+    {% assign tocCounter = 0 %}
+    {% assign levelCounters = "0,0,0,0,0,0" | split: "," %}
+    {% assign minHeader = include.h_min | default: 1 %}
+    {% assign nodes = include.html | strip | split: '<h' %}
+
+    {% capture jekyll_toc %}{% endcapture %}
+    {% assign orderedList = include.ordered | default: false %}
+    {% assign baseURL = include.base_url | default: '' %}
+    {% assign skipNoIDs = include.skip_no_ids | default: false %}
+    {% assign flatToc = include.flat_toc | default: false %}
+
+    {% for node in nodes %}
+        {% if node == "" %}{% continue %}{% endif %}
+
+        {% assign currLevel = node | replace: '"', '' | slice: 0, 1 | times: 1 %}
+        {% if currLevel < minHeader or currLevel > include.h_max %}{% continue %}{% endif %}
+
+        {% comment %} 新增：层级计数器逻辑 {% endcomment %}
+        {% assign relLevel = currLevel | minus: minHeader %}
+        {% assign counterIndex = relLevel %}
+        {% assign currentCount = levelCounters[counterIndex] | plus: 1 %}
+        
+        {% comment %} 更新层级计数器数组 {% endcomment %}
+        {% capture newLevelCounters %}
+            {% for i in (0..5) %}
+                {% if i == counterIndex %}
+                    {{ currentCount }}
+                {% else %}
+                    {{ levelCounters[i] }}
+                {% endif %}
+                {% unless forloop.last %},{% endunless %}
+            {% endfor %}
+        {% endcapture %}
+        {% assign levelCounters = newLevelCounters | split: "," %}
+
+        {% comment %} 生成组合ID {% endcomment %}
+        {% assign tocCounter = tocCounter | plus: 1 %}
+        {% capture htmlID %}lvl{{ relLevel | plus: 1 }}n{{ currentCount }}g{{ tocCounter }}{% endcapture %}
+
+        {% comment %} 修改标题ID生成逻辑 {% endcomment %}
+        {% capture headerContent %}
+            {{ node | split: '</h' | first | replace: 'id="', 'data-original-id="' }}id="{{ htmlID }}" 
+        {% endcapture %}
+        {% assign header = headerContent | split: '>' | last %}
+
+        {% comment %} 保留原有处理逻辑 {% endcomment %}
+        {% if include.item_class %}
+            {% capture listItemClass %} class="{{ include.item_class | replace: '%level%', currLevel }}"{% endcapture %}
+        {% endif %}
+
+        {% capture anchorBody %}{% if include.sanitize %}{{ header | strip_html }}{% else %}{{ header }}{% endif %}{% endcapture %}
+        {% capture anchorAttributes %} href="{% if baseURL %}{{ baseURL }}{% endif %}#{{ htmlID }}"{% endcapture %}
+
+        {% if include.anchor_class %}
+            {% capture anchorAttributes %}{{ anchorAttributes }} class="{{ include.anchor_class }}"{% endcapture %}
+        {% endif %}
+
+        {% comment %} 列表结构生成逻辑保持不变 {% endcomment %}
+        {% if currLevel > lastLevel %}
+            {% capture jekyll_toc %}{{ jekyll_toc }}<{{ listModifier }}{{ subMenuClass }}>{% endcapture %}
+        {% elsif currLevel < lastLevel %}
+            {% assign repeatCount = lastLevel | minus: currLevel %}
+            {% for i in (1..repeatCount) %}
+                {% capture jekyll_toc %}{{ jekyll_toc }}</li></{{ listModifier }}>{% endcapture %}
+            {% endfor %}
+            {% capture jekyll_toc %}{{ jekyll_toc }}</li>{% endcapture %}
+        {% else %}
+            {% capture jekyll_toc %}{{ jekyll_toc }}</li>{% endcapture %}
+        {% endif %}
+
+        {% capture jekyll_toc %}{{ jekyll_toc }}<li{{ listItemClass }}><a{{ anchorAttributes }}>{{ anchorBody }}</a>{% endcapture %}
+
+        {% assign lastLevel = currLevel %}
+    {% endfor %}
+
+    {% comment %} 闭合未关闭的标签 {% endcomment %}
+    {% assign repeatCount = lastLevel | minus: minHeader %}
+    {% for i in (1..repeatCount) %}
+        {% capture jekyll_toc %}{{ jekyll_toc }}</li></{{ listModifier }}>{% endcapture %}
+    {% endfor %}
+
+    {% if jekyll_toc != '' %}
+        {% assign rootAttributes = '' %}
+        {% if include.class %}
+            {% capture rootAttributes %} class="{{ include.class }}"{% endcapture %}
+        {% endif %}
+        {% if include.id %}
+            {% capture rootAttributes %}{{ rootAttributes }} id="{{ include.id }}"{% endcapture %}
+        {% endif %}
+        {% assign nodes = jekyll_toc | split: '>' %}
+        {% capture jekyll_toc %}<{{ listModifier }}{{ rootAttributes }}>{{ nodes | shift | join: '>' }}>{% endcapture %}
+    {% endif %}
+{% endcapture %}{% assign tocWorkspace = '' %}{{ jekyll_toc }}
+
