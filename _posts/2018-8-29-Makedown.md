@@ -1,10 +1,6 @@
 ---
-title: Makedown 语法笔记
-description: Makedown 语法笔记
-categories:
-  - 语法笔记
-tags:
-  - Markdown 
+title: Makedown 测试
+description: Makedown 测试
 ---
 
 <!-- more -->
