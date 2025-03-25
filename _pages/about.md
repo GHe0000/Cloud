@@ -7,13 +7,13 @@ redirect_from:
   - /about.html
 ---
 
-这是一个简单的个人 Blog，建立的初衷是为了方便地分享本人的一些笔记和文档，也因此此 Blog 起名为 Cloud。
+这是一个简单的个人 Blog，建立的初衷是为了方便地分享本人的一些笔记和文档，也因此此 Blog 起名为 Cloud.
 
 ## 常用编程语言
 
 - 主力编程语言：Python、C++
 - 符号计算：Mathematica
-- 文档：Typst、LaTeX
+- 文档：LaTeX、Typst
 - 笔记：Markdown
 
 ## 个人项目
@@ -23,6 +23,10 @@ redirect_from:
 **BlackHoleSim**: 一个个人的练手项目，用 C++ 实现一个 Schwarzschild 时空的光追，并渲染一个黑洞的吸积盘图像.
 
 <https://github.com/GHe0000/BlackHoleSim>
+
+**Physics**：我写的一些物理计算的脚本，如一维定态 Schrödinger 方程数值求解，广义相对论测地线数值计算，张量符号计算等脚本.
+
+<https://github.com/GHe0000/Physics>
 
 **Bongocat-python**：一个基于 Python 和 OpenGL 复刻的 Bongocat，包含了鼠标追踪和基于 Bezier 曲线的手臂绘制.
 
@@ -38,10 +42,6 @@ redirect_from:
 **GCore**：一个及其简陋的 4 位 CPU，可在 Tang Nano FPGA 上运行.
 
 <https://github.com/GHe0000/GCore>
-
-**Physics**：我写的一些物理计算的脚本，如一维定态 Schrödinger 方程数值求解，广义相对论测地线数值计算，张量符号计算等脚本.
-
-<https://github.com/GHe0000/Physics>
 
 **Vitural**：一个基于 Python 和 OpenGL 的及其简陋的 Live2D 类似物（如果这也能算 Live2D 的话）.
 
