@@ -13,6 +13,10 @@ redirect_from:
 
 ### 概率论笔记
 
+>All knowledge degenerates into probability. —— David Hume
+
+更新中，参照 CC 4.0 BY-NC 进行共享. **请不要将本文档上传至任意的公共平台（如百度文库等）**
+
 [下载链接](/files/ProbabilityAndStatistics.pdf)
 [在线阅读](/pdfjs/web/viewer.html?file=/files/ProbabilityAndStatistics.pdf)
 

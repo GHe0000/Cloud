@@ -57,6 +57,4 @@ redirect_from:
 
 ## 友链
 
-巨佬 Coast23 的 Blog：
-
-<https://coast23.github.io/>
+巨佬 Coast23 的 Blog：<https://coast23.github.io/>
