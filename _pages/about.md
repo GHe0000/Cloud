@@ -54,3 +54,9 @@ redirect_from:
 **AutoDazi**：一个用于完成打字作业的自动打字程序.
 
 <https://github.com/GHe0000/AutoDazi>
+
+## 友链
+
+巨佬 Coast23 的 Blog：
+
+<https://coast23.github.io/>
