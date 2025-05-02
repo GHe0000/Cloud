@@ -36,20 +36,19 @@ $$S=\int_{t_{1}}^{t_{2}}\mathrm{d}t\,\mathcal{L}(q_{i},\dot{q}_{i},t)$$
 $t_{2}$ 的实际轨迹满足作用量 $S$ 取极值.[^3]
 
 要得到一个特定力学体系的作用量，最常用的方法是从体系的对称性出发，从而构建出相应的
-Lorentz
-标量.从最小作用量出发，要求解出力学体系的运动方程，则可以通过变分法得到.
+Lorentz 标量. 从最小作用量出发，要求解出力学体系的运动方程，则可以通过变分法得到.
 
 $\mathbf{Theorem} 2:$ (Euler-Lagrange 方程).
 对于一个泛函
 
-*$$S=\int_{t_{1}}^{t_{2}}\mathrm{d}t\,\mathcal{L}(q_{i},\dot{q}_{i},t)$$*
+$$S=\int_{t_{1}}^{t_{2}}\mathrm{d}t\,\mathcal{L}(q_{i},\dot{q}_{i},t)$$
 
-*若使得上述泛函能取到极值，则其一阶变分为 $0$，其内部的 $\mathcal{L}$
-满足：*
+若使得上述泛函能取到极值，则其一阶变分为 $0$，其内部的 $\mathcal{L}$
+满足：
 
-*$$\frac{\partial\mathcal{L}}{\partial\dot{q}_{i}}-\frac{\partial\mathcal{L}}{\partial q_{i}}=0$$*
+$$\frac{\partial\mathcal{L}}{\partial\dot{q}_{i}}-\frac{\partial\mathcal{L}}{\partial q_{i}}=0$$
 
-*此即 Euler-lagrange 方程.*
+此即 Euler-lagrange 方程.
 
 一旦给定了一个力学体系的 Lagrange 量（作用量），根据 Hamilton
 原理和变分法可知，体系的运动方程由 E-L 方程决定.
