@@ -29,7 +29,7 @@ $\dot{q}_{i}$
 
 在整个经典力学乃至整个物理学中，有如下极其重要的定理[^2]
 
-<div class="notice--info">
+<div class="notice--info" markdown="1">
 $\mathbf{Theorem}:$ (Hamilton 原理).
 任意力学体系中都存在一个与运动相关的量，称为**最小作用量**，记作
 $S$，其为一个 Lorentz 标量.如果一个力学体系在 $t_{1}$ 和 $t_{2}$
@@ -45,7 +45,7 @@ $t_{2}$ 的实际轨迹满足作用量 $S$ 取极值.[^3]
 要得到一个特定力学体系的作用量，最常用的方法是从体系的对称性出发，从而构建出相应的
 Lorentz 标量. 从最小作用量出发，要求解出力学体系的运动方程，则可以通过变分法得到.
 
-<div class="notice--info">
+<div class="notice--info" markdown="1">
 $\mathbf{Theorem}:$ (Euler-Lagrange 方程).
 对于一个泛函
 
