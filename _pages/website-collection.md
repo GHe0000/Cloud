@@ -7,13 +7,13 @@ redirect_from:
   - /markdown.html
 ---
 
-这里收集了本人常用的一些工具网站的链接（更新时间：2025-2-18）
+这里收集了本人常用的一些工具网站的链接（更新时间：2025-5-2）
 
 ## 电子书查找&下载
 
 - [全国图书馆参考咨询联盟(查询用)](http://www.ucdrs.superlib.net/)
 - [Library Genesis](https://libgen.gs/)
-- [Z-Library Project](https://zh.z-lib.gs/)
+- [Z-Library Project](https://zh.z-library.sk/)
 - [Anna's Archive](https://annas-archive.org/)
 - [广西图书馆(内有读秀和超星的包库图书)](https://www.gxlib.org.cn/)
 
@@ -62,17 +62,22 @@ redirect_from:
 
 ## AI工具
 
-- [Boardmix (AI白板)](https://boardmix.cn/)
-- [Remove (AI抠图)](https://www.remove.bg/zh/upload)
-- [稿定设计 (AI图像处理)](https://www.gaoding.com/)
-- [AI Polish (AI阅读&AI润色)](https://polish.readpaper.com/welcome)
+- [Boardmix (AI 白板)](https://boardmix.cn/)
+- [Remove (AI 抠图)](https://www.remove.bg/zh/upload)
+- [稿定设计 (AI 图像处理)](https://www.gaoding.com/)
+- [AI Polish (AI 阅读&AI 润色)](https://polish.readpaper.com/welcome)
 - [免费音频转文本](https://converter.app/cn/audio-text/)
 - [免费音频转文本2](https://www.audio2edit.com/zh/speech-to-text)
 
+- [GPTZero (AI 检测)](https://gptzero.cc/)
+- [ZeroGPT (AI 检测)](https://www.zerogpt.com/)
+- [朱雀 AI 检测](https://matrix.tencent.com/ai-detect/ai_gen)
+- [ZeroGPT Plus (AI 检测)](https://www.zerogpt.plus/cn)
+
 ## 设计
 
-- [ColorMind (AI配色)](http://colormind.io/)
-- [BrandMark (AI Logo设计)](https://brandmark.io/)
+- [ColorMind (AI 配色)](http://colormind.io/)
+- [BrandMark (AI Logo 设计)](https://brandmark.io/)
 
 ## 杂七杂八
 
