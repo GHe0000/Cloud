@@ -1,5 +1,5 @@
 ---
-title: 从Hamilton原理及对称性导出低速弱场下Lagrange量
+title: 从 Hamilton 原理及对称性导出低速弱场下 Lagrange 量
 toc: true
 categories:
   - 物理
@@ -7,11 +7,14 @@ tags:
   - 理论力学
 ---
 
+本文给出从 Hamilton 原理及对称性导出低速弱场下 Lagrange 量的方法.
+
+<!-- more -->
+
 一般而言，我们介绍分析力学是从我们所熟悉的 Newton 定律通过虚功原理和 d'Alembert 原理从而得到 Eular-Lagrange 方程以及对应的 Lagrange 量.
 在此我们通过另外一种方法，将 Hamilton 原理作为某种"公理"，从最简单最基础的角度进行分析和推导，经过低速近似和弱场近似，得到相同的
 Lagrange 量. 此方法相比原本的方法更为现代，同时也体现了对称性在现代物理学研究范式中的重要地位.
 
-<!-- more -->
 
 （注：本文中均使用 Einstein 求和约定）
 
