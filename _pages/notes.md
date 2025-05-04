@@ -7,13 +7,13 @@ redirect_from:
   - /markdown.html
 ---
 
-这里整理收集了我写的一些笔记、讲义等文档（更新时间：2025-2-5）：
+这里整理收集了我写的一些笔记、讲义等文档（更新时间：2025-5-2）：
 
 ## 学习笔记
 
 ### 概率论笔记
 
->All knowledge degenerates into probability. —— David Hume
+> All knowledge degenerates into probability. —— David Hume
 
 更新中，参照 CC 4.0 BY-NC 进行共享. **请不要将本文档上传至任意的公共平台（如百度文库等）**
 
