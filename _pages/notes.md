@@ -7,18 +7,18 @@ redirect_from:
   - /markdown.html
 ---
 
-这里整理收集了我写的一些笔记、讲义等文档（更新时间：2025-5-2）：
+这里整理收集了我写的一些笔记、讲义等文档（更新时间：2025-5-20）：
 
 ## 学习笔记
 
 ### 概率论笔记
 
+[下载链接](/files/ProbabilityAndStatistics.pdf)
+[在线阅读](/pdfjs/web/viewer.html?file=/files/ProbabilityAndStatistics.pdf)
+
 > All knowledge degenerates into probability. —— David Hume
 
 更新中，参照 CC 4.0 BY-NC 进行共享. **请不要将本文档上传至任意的公共平台（如百度文库等）**
-
-[下载链接](/files/ProbabilityAndStatistics.pdf)
-[在线阅读](/pdfjs/web/viewer.html?file=/files/ProbabilityAndStatistics.pdf)
 
 ### 高等数学笔记及随想
 
@@ -82,6 +82,8 @@ redirect_from:
 
 [下载链接](/files/微分形式简介.pdf)
 [在线阅读](/pdfjs/web/viewer.html?file=/files/微分形式简介.pdf)
+
+> 只要演算是优美的，要相信我们总能找到对应的结构.
 
 一个针对高等数学学习的简易微分形式介绍，不涉及微分几何，仅做运算上的介绍.
 
