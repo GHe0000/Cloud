@@ -5,39 +5,6 @@ description: Makedown 测试
 
 <!-- more -->
 
-```cpp
-int j = 0;
-for (int i = 1; i < n; i++) // j匹配前缀 i匹配后缀
-{
-	while (j > 0 && pattern[j] != pattern[i])
-	{
-		j = nxt[j - 1];
-	}
-	if (pattern[i] == pattern[j])
-	{
-		j++;
-	}
-	nxt[i] = j;
-}
-```
-
-
-```c++
-int j = 0;
-for (int i = 1; i < n; i++) // j匹配前缀 i匹配后缀
-{
-	while (j > 0 && pattern[j] != pattern[i])
-	{
-		j = nxt[j - 1];
-	}
-	if (pattern[i] == pattern[j])
-	{
-		j++;
-	}
-	nxt[i] = j;
-}
-```
-
 ## MathJax 
 
 Support for MathJax Version 3.0 is included in the template:
