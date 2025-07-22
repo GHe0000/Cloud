@@ -11,6 +11,13 @@ redirect_from:
 
 ## 学习笔记
 
+### 数学物理方法笔记及随想
+
+[下载链接](/files/MethodsOfMathematicalPhysics.pdf)
+[在线阅读](/pdfjs/web/viewer.html?file=/files/MethodsOfMathematicalPhysics.pdf)
+
+更新中，参照 CC 4.0 BY-NC 进行共享. **请不要将本文档上传至任意的公共平台（如百度文库等）**
+
 ### 概率论笔记
 
 [下载链接](/files/ProbabilityAndStatistics.pdf)
@@ -18,7 +25,7 @@ redirect_from:
 
 > All knowledge degenerates into probability. —— David Hume
 
-更新中，参照 CC 4.0 BY-NC 进行共享. **请不要将本文档上传至任意的公共平台（如百度文库等）**
+完稿，参照 CC 4.0 BY-NC 进行共享. **请不要将本文档上传至任意的公共平台（如百度文库等）**
 
 ### 高等数学笔记及随想
 
@@ -29,7 +36,7 @@ redirect_from:
 
 这是笔者在预科期间学习同济高等数学时整理的笔记和随想. 虽然是在学习同济的高等数学时写下的笔记，但其内容基本上与教材没有什么关联，更多是一些方便的解题技巧，一些笔者认为具有启发意义的新颖的理解. 因此本笔记中并没有避讳一些更“高级”的数学. 
 
-暂停更新，参照 CC 4.0 BY-NC 进行共享. **请不要将本文档上传至任意的公共平台（如百度文库等）**
+完稿，参照 CC 4.0 BY-NC 进行共享. **请不要将本文档上传至任意的公共平台（如百度文库等）**
 
 ### 线性代数笔记
 
