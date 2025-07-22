@@ -7,11 +7,10 @@ redirect_from:
   - /markdown.html
 ---
 
-这里收集了本人常用的一些工具网站的链接（更新时间：2025-5-2）
+这里收集了本人常用的一些工具网站的链接（更新时间：2025-7-23）
 
 ## 电子书查找&下载
 
-- [全国图书馆参考咨询联盟(查询用)](http://www.ucdrs.superlib.net/)
 - [Library Genesis](https://libgen.gs/)
 - [Z-Library Project](https://zh.z-library.sk/)
 - [Anna's Archive](https://annas-archive.org/)
