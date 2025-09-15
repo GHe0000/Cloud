@@ -12,8 +12,8 @@ redirect_from:
 ## 常用编程语言
 
 - 主力编程语言：Python、C++
-- 符号计算：Mathematica
-- 文档：LaTeX、Typst
+- 符号计算：Mathematica、Sympy
+- 文档：LaTeX
 - 笔记：Markdown
 
 ## 个人项目
