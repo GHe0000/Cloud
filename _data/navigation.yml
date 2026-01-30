@@ -18,6 +18,9 @@ main:
   - title: "文章分类"
     url: /categories/
 
+  - title: "随想"
+    url: /thoughts/
+    
   - title: "书单"
     url: /booklist/
 

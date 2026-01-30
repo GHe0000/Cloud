@@ -1,7 +1,6 @@
 ---
 permalink: /notes/
 title: "Notes"
-toc: true
 author_profile: true
 redirect_from: 
   - /md/
@@ -58,6 +57,8 @@ redirect_from:
 
 [下载链接](/files/TheoreticalPhysics.pdf)
 [在线阅读](/pdfjs/web/viewer.html?file=/files/TheoreticalPhysics.pdf)
+
+停止更新，参照 CC 4.0 BY-NC 进行共享. **请不要将本文档上传至任意的公共平台（如百度文库等）**
 
 ### 高中物理二级结论随笔
 
