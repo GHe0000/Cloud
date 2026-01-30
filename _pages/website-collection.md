@@ -7,11 +7,11 @@ redirect_from:
   - /markdown.html
 ---
 
-这里收集了本人常用的一些工具网站的链接（更新时间：2025-7-23）
+这里收集了本人常用的一些工具网站的链接（更新时间：2026-1-30）
 
 ## 电子书查找&下载
 
-- [Library Genesis](https://libgen.gs/)
+- [Library Genesis](https://libgen.ad/)
 - [Z-Library Project](https://zh.z-library.sk/)
 - [Anna's Archive](https://annas-archive.org/)
 - [广西图书馆(内有读秀和超星的包库图书)](https://www.gxlib.org.cn/)
@@ -24,16 +24,9 @@ redirect_from:
 
 - [arXiv.org (全球最大预印本网站)](https://arxiv.org/)
 - [Crossref Metadata Search (论文DOI查询)](https://search.crossref.org/)
-- [Library Genesis • scientific articles (免费论文下载)](http://libgen.rs/scimag/)
-- [Sci-Hub (免费论文下载)](https://sci-hub.hkvisa.net/)（网址不稳定）
+- [Sci-Hub (免费论文下载)](https://sci-hub.st/)（网址不稳定）
 - [谷粉学术论坛-文献互助](http://bbs.99lb.net/)
 - [PubScholar公益平台](https://pubscholar.cn/)
-
-## 打字练习
-
-- [双拼练习 @ BlueSky](https://api.ihint.me/shuang/)
-- [dazidazi-在线打字练习网站](https://dazidazi.com/)
-- [Qwerty Learner (打字同时记忆单词)](https://qwerty.kaiyi.cool/)
 
 ## 文档编辑
 
@@ -65,8 +58,9 @@ redirect_from:
 - [Remove (AI 抠图)](https://www.remove.bg/zh/upload)
 - [稿定设计 (AI 图像处理)](https://www.gaoding.com/)
 - [AI Polish (AI 阅读&AI 润色)](https://polish.readpaper.com/welcome)
-- [免费音频转文本](https://converter.app/cn/audio-text/)
-- [免费音频转文本2](https://www.audio2edit.com/zh/speech-to-text)
+- [音频转文本](https://converter.app/cn/audio-text/)
+- [音频转文本2](https://www.audio2edit.com/zh/speech-to-text)
+- [Doc2x（PDF 转 LaTeX）](https://doc2x.noedgeai.com/)
 
 - [GPTZero (AI 检测)](https://gptzero.cc/)
 - [ZeroGPT (AI 检测)](https://www.zerogpt.com/)
@@ -78,8 +72,15 @@ redirect_from:
 - [ColorMind (AI 配色)](http://colormind.io/)
 - [BrandMark (AI Logo 设计)](https://brandmark.io/)
 
+## 打字练习
+
+- [双拼练习 @ BlueSky](https://api.ihint.me/shuang/)
+- [dazidazi-在线打字练习网站](https://dazidazi.com/)
+- [Qwerty Learner (打字同时记忆单词)](https://qwerty.kaiyi.cool/)
+
 ## 杂七杂八
 
+- [IP 风险检测](https://ping0.cc/)
 - [赛博刮刮乐](https://www.lottery.gov.cn/xdgg/sgty/)
 - [网页 Linux 虚拟机](https://webvm.io/)
 - [Virustotal (在线查毒)](https://www.virustotal.com/gui/home/upload)
