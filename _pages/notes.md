@@ -7,7 +7,7 @@ redirect_from:
   - /markdown.html
 ---
 
-这里整理收集了我写的一些笔记、讲义等文档（更新时间：2025-10-8）：
+这里整理收集了我写的一些笔记、讲义等文档（更新时间：2025-2-12）：
 
 ## 学习笔记
 
@@ -16,7 +16,12 @@ redirect_from:
 [下载链接](/files/MethodsOfMathematicalPhysics.pdf)
 [在线阅读](/pdfjs/web/viewer.html?file=/files/MethodsOfMathematicalPhysics.pdf)
 
-更新中，参照 CC 4.0 BY-NC 进行共享. **请不要将本文档上传至任意的公共平台（如百度文库等）**
+[公式表下载链接](/files/数物方法公式表.pdf)
+[公式表在线阅读](/pdfjs/web/viewer.html?file=/files/数物方法公式表.pdf)
+
+这是笔者上数学物理方法这门课时写的笔记，上半学期（到 Laplace 变换）写的比较详细，下半学期比较匆忙因此写的比较简短.
+
+停止更新，参照 CC 4.0 BY-NC 进行共享. **请不要将本文档上传至任意的公共平台（如百度文库等）**
 
 ### 概率论笔记
 
@@ -58,6 +63,8 @@ redirect_from:
 [下载链接](/files/TheoreticalPhysics.pdf)
 [在线阅读](/pdfjs/web/viewer.html?file=/files/TheoreticalPhysics.pdf)
 
+针对刘川的《理论力学》的前两章的笔记. 之后开理论力学课后可能会重新写一个理论力学的笔记. 最近在看 Arnold 的《经典力学的数学方法》，后面的理论力学笔记可能希望能写的“几何化”一些.
+
 停止更新，参照 CC 4.0 BY-NC 进行共享. **请不要将本文档上传至任意的公共平台（如百度文库等）**
 
 ### 高中物理二级结论随笔
@@ -81,7 +88,9 @@ redirect_from:
 [下载链接](/files/MatrixOptics.pdf)
 [在线阅读](/pdfjs/web/viewer.html?file=/files/MatrixOptics.pdf)
 
-更新中，参照 CC 4.0 BY-NC 进行共享. **请不要将本文档上传至任意的公共平台（如百度文库等）**
+这是笔者上钱列加的《光学》这本书时推导各个光学元件的传输矩阵的笔记，可惜的是没有给出对应的示意图（对于光学笔记这个问题还挺严重的），原本想写的一些做题技巧也没来得及写. 如果后面有可能的话（比如上光学的朋辈导师课程）可能会补充.
+
+停止更新，参照 CC 4.0 BY-NC 进行共享. **请不要将本文档上传至任意的公共平台（如百度文库等）**
 
 ### 微分形式简介
 
@@ -91,6 +100,15 @@ redirect_from:
 > 只要演算是优美的，要相信我们总能找到对应的结构.
 
 一个针对高等数学学习的简易微分形式介绍，不涉及微分几何，仅做运算上的介绍.
+
+完稿，参照 CC 4.0 BY-NC 进行共享. 
+
+### 高数反例集
+
+[下载链接](/files/CounterExample.pdf)
+[在线阅读](/pdfjs/web/viewer.html?file=/files/CounterExample.pdf)
+
+简单整理了课上遇到的几个高数反例. 整理了一部分后发现相关书籍已经有了详细的整理，比如汪林的《数学分析中的问题和反例》，后续就没有进一步整理了.
 
 完稿，参照 CC 4.0 BY-NC 进行共享. 
 
