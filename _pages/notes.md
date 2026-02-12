@@ -11,6 +11,13 @@ redirect_from:
 
 ## 学习笔记
 
+### 电动力学笔记
+
+[下载链接](/files/Electrodynamics.pdf)
+[在线阅读](/pdfjs/web/viewer.html?file=/files/Electrodynamics.pdf)
+
+更新中，参照 CC 4.0 BY-NC 进行共享. **请不要将本文档上传至任意的公共平台（如百度文库等）**
+
 ### 数学物理方法笔记及随想
 
 [下载链接](/files/MethodsOfMathematicalPhysics.pdf)
@@ -131,3 +138,14 @@ redirect_from:
 这是笔者参加 2023 南京大学强基计划（非破格）后回忆的题目，包含了笔试题目（部分选项没有回忆出来）和笔者当时抽到的面试题目，应该是全网最全. 
 
 完稿，参照 CC 4.0 BY-NC 进行共享. 
+
+## 杂七杂八
+
+### 科学编程入门课程作业
+
+[仓库链接](https://github.com/GHe0000/scientific-programming-intro)
+[在线阅读](https://spi.ghe0000.pp.ua/)
+
+这是笔者在上厦门大学张勇老师的科学编程入门课程的作业. 其中有挺多有意思的内容，因此放在网站上分享.
+
+完稿，参照 CC 4.0 BY-NC 进行共享. 代码参照 MIT 协议共享.
