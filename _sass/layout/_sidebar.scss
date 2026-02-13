@@ -69,8 +69,8 @@
     position: absolute;
     top: 0;
     right: 0;
-    width: 200px;
-    margin-right: -200px;
+    width: 240px;
+    margin-right: -240px;
     padding-left: 1em;
     z-index: 10;
 
@@ -90,10 +90,10 @@
     }
   }
 
-  @include breakpoint($x-large) {
-    width: 240px;
-    margin-right: -240px;
-  }
+  // @include breakpoint($x-large) {
+  //   width: 240px;
+  //   margin-right: -240px;
+  // }
 }
 
 .splash .sidebar__right {
