@@ -108,7 +108,7 @@ $code-notice-background-mix: 90% !default;
   font-family: $global-font-family;
   font-size: $type-size-6 !important;
   text-indent: initial;
-  background-color: mix($background-color, $notice-color, $notice-background-mix);
+  background-color: mix($background, $notice-color, $notice-background-mix);
   border-radius: $border-radius;
   box-shadow: 0 1px 1px rgba($notice-color, 0.25);
 
@@ -147,7 +147,7 @@ $code-notice-background-mix: 90% !default;
   }
 
   code {
-    background-color: mix($background-color, $notice-color, $code-notice-background-mix);
+    background-color: mix($background, $notice-color, $code-notice-background-mix);
   }
 
   pre code {
