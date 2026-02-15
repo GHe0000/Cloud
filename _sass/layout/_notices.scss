@@ -99,23 +99,26 @@
 //   @include notice($danger-color);
 // }
 
-$notice-background-mix: 80% !default;
-$code-notice-background-mix: 90% !default;
+$notice-font-size: 0.9em !default;
 
 @mixin notice($notice-color) {
   margin: 2em 0 !important;
   padding: 1em;
-  font-family: $global-font-family;
-  font-size: $type-size-6 !important;
+  font-size: $notice-font-size !important;
   text-indent: initial;
-  background-color: mix($background, $notice-color, $notice-background-mix);
+  
+  background-color: rgba($notice-color, 0.1);
+  
   border-radius: $border-radius;
   box-shadow: 0 1px 1px rgba($notice-color, 0.25);
+  
+  color: var(--global-text-color);
 
   h4 {
     margin-top: 0 !important;
     margin-bottom: 0.75em;
     line-height: inherit;
+    color: $notice-color;
   }
 
   @at-root .page__content #{&} h4 {
@@ -135,19 +138,15 @@ $code-notice-background-mix: 90% !default;
   }
 
   a {
-    color: mix(#000, $notice-color, 10%);
-
+    color: $notice-color;
+    text-decoration: underline;
     &:hover {
-      color: mix(#000, $notice-color, 50%);
+      color: mix(#000, $notice-color, 20%);
     }
   }
 
-  @at-root #{selector-unify(&, "blockquote")} {
-    border-inline-start-color: mix(#000, $notice-color, 10%);
-  }
-
   code {
-    background-color: mix($background, $notice-color, $code-notice-background-mix);
+    background-color: rgba($notice-color, 0.15);
   }
 
   pre code {
