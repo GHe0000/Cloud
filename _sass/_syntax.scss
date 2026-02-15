@@ -2,41 +2,91 @@
    Syntax highlighting
    ========================================================================== */
 
+// div.highlighter-rouge, figure.highlight {
+//   position: relative;
+//   margin-bottom: 1em;
+//   padding: 1em;
+//   border: 1px solid var(--global-border-color);
+//   border-radius: $border-radius;
+//   background-color: var(--global-code-background-color);
+//   box-shadow: $box-shadow;
+//   font-size: $type-size-4;
+//
+//   &:before {
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     padding: 0.5em;
+//     background-color: mix(#fff, #7a8288, 90%);
+//     content: "\f121";
+//     font-family: "Font Awesome 6 Free" !important;
+//     font-size: $type-size-6;
+//     line-height: 1;
+//     text-transform: none;
+//     speak: none;
+//   }
+//
+//   .highlight {
+//     margin: 0;
+//     font-family: $monospace;
+//     font-size: $type-size-6;
+//     line-height: 1.8;
+//   }
+// }
+//
+// .highlight table td { padding: 5px; }
+// .highlight table pre { margin: 0; }
+
 div.highlighter-rouge, figure.highlight {
   position: relative;
   margin-bottom: 1em;
-  padding: 1em;
-  border: 1px solid var(--global-border-color);
+  
+  background-color: var(--global-code-background-color); 
+  border: 1px solid var(--global-border-color); 
+  
+  color: $base05;
+  font-family: $monospace;
+  font-size: $type-size-6;
+  line-height: 1.8;
   border-radius: $border-radius;
-  background-color: var(--global-code-background-color);
-  box-shadow: $box-shadow;
-  font-size: $type-size-4;
 
-  &:before {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 0.5em;
-    background-color: mix(#fff, #7a8288, 90%);
-    content: "\f121";
-    font-family: "Font Awesome 6 Free" !important;
-    font-size: $type-size-6;
-    line-height: 1;
-    text-transform: none;
-    speak: none;
+  [dir=rtl] & {
+    direction: ltr;
+    text-align: start;
   }
 
-  .highlight {
+  > pre,
+  pre.highlight {
     margin: 0;
-    font-family: $monospace;
-    font-size: $type-size-6;
-    line-height: 1.8;
+    padding: 1em;
   }
 }
 
-.highlight table td { padding: 5px; }
-.highlight table pre { margin: 0; }
-
+.highlight table {
+  margin-bottom: 0;
+  font-size: 1em;
+  border: 0;
+  td {
+    padding: 0;
+    width: calc(100% - 1em);
+    border: 0;
+    &.gutter,
+    &.rouge-gutter {
+      padding-inline-end: 1em;
+      width: 1em;
+      color: $base04; 
+      border-inline-end: 1px solid $base04;
+      text-align: end;
+    }
+    &.code,
+    &.rouge-code {
+      padding-inline-start: 1em;
+    }
+  }
+  pre {
+    margin: 0;
+  }
+}
 
 /*
    Solarized Light
