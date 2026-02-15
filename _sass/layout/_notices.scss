@@ -105,7 +105,6 @@ $code-notice-background-mix: 90% !default;
 @mixin notice($notice-color) {
   margin: 2em 0 !important;
   padding: 1em;
-  color: $text-color;
   font-family: $global-font-family;
   font-size: $type-size-6 !important;
   text-indent: initial;
