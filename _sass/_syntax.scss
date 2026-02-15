@@ -41,10 +41,16 @@ div.highlighter-rouge, figure.highlight {
   position: relative;
   margin-bottom: 1em;
   
+  /* 1. 背景色 */
   background-color: var(--global-code-background-color); 
+  
+  /* 2. 外边框 */
   border: 1px solid var(--global-border-color); 
   
-  color: $base05;
+  /* 3. 代码文字颜色 (替换了 $base05) */
+  /* 使用你定义的专门用于代码文本的颜色 */
+  color: var(--global-code-text-color); 
+
   font-family: $monospace;
   font-size: $type-size-6;
   line-height: 1.8;
@@ -66,28 +72,39 @@ div.highlighter-rouge, figure.highlight {
   margin-bottom: 0;
   font-size: 1em;
   border: 0;
+
   td {
     padding: 0;
     width: calc(100% - 1em);
     border: 0;
+
+    /* 行号列 */
     &.gutter,
     &.rouge-gutter {
       padding-inline-end: 1em;
       width: 1em;
-      color: $base04; 
-      border-inline-end: 1px solid $base04;
+
+      /* 4. 行号颜色 (替换了 $base04) */
+      /* 使用浅灰色文本变量，区别于正文代码 */
+      color: var(--global-text-color-light); 
+      
+      /* 5. 分隔线颜色 (替换了 $base04) */
+      /* 使用全局边框颜色，保持统一 */
+      border-inline-end: 1px solid var(--global-border-color); 
+      
       text-align: end;
     }
+
     &.code,
     &.rouge-code {
       padding-inline-start: 1em;
     }
   }
+
   pre {
     margin: 0;
   }
 }
-
 /*
    Solarized Light
    http://ethanschoonover.com/solarized
