@@ -123,7 +123,8 @@ $$
 
 $$
 \begin{aligned}
-  \frac{\mathrm{d}}{\mathrm{d}t} \left( \frac{\partial \mathcal{L}}{\partial \dot{q}} \right) - \frac{\partial \mathcal{L}}{\partial q} =& \sum_{i=0}^{n} \left[ i a_i m \left[ (n-i) \dot{q}^2 V' T^{i-1} V^{n-i-1} + (2i-1) \ddot{q} T^{i-1} V^{n-i} \right] - a_i T^i (n-i) V^{n-i-1} V' \right] \\
+   & \frac{\mathrm{d}}{\mathrm{d}t} \left( \frac{\partial \mathcal{L}}{\partial \dot{q}} \right) - \frac{\partial \mathcal{L}}{\partial q} \\
+  =& \sum_{i=0}^{n} \left[ i a_i m \left[ (n-i) \dot{q}^2 V' T^{i-1} V^{n-i-1} + (2i-1) \ddot{q} T^{i-1} V^{n-i} \right] - a_i T^i (n-i) V^{n-i-1} V' \right] \\
   =& \sum_{i=0}^{n} \left[ a_i (2i-1) (n-i) V' T^i V^{n-i-1} + a_i (2i-1) i m \ddot{q} T^{i-1} V^{n-i} \right] \\
   =& a_0 (2 \cdot 0 -1) \cdot 0 \cdot m \ddot{q} T^{-1} V^n + a_n (2n-1)(n-n) V' T^n V^{-1} \\ 
    &+ \sum_{i=0}^{n-1} \left[ a_i (2i-1) (n-i) V' T^i V^{n-i-1} + a_{i+1} (2i+1) (i+1) m \ddot{q} T^i V^{n-i-1} \right] \\ 
