@@ -11,7 +11,6 @@ redirect_from:
 
 ## 学习笔记
 
-
 ### 理论力学笔记
 
 [下载链接](/files/理论力学.pdf)
@@ -24,7 +23,7 @@ redirect_from:
 [下载链接](/files/Electrodynamics.pdf)
 [在线阅读](/pdfjs/web/viewer.html?file=/files/Electrodynamics.pdf)
 
-更新中，参照 CC 4.0 BY-NC 进行共享. 请不要将本文档上传至任意的公共平台（如百度文库等）
+暂停更新，参照 CC 4.0 BY-NC 进行共享. 请不要将本文档上传至任意的公共平台（如百度文库等）
 
 ### 数学物理方法笔记及随想
 
