@@ -7,6 +7,8 @@ redirect_from:
   - /about.html
 ---
 
+[![last-commit](https://img.shields.io/github/last-commit/GHe0000/Cloud?style=flat&logo=github&label=last-commit&labelColor=555&color=007ec6)](https://github.com/GHe0000/Cloud/commits)[![wakatime](https://wakatime.com/badge/user/70908aa3-b2c6-4f44-a07f-7bd45f260e48/project/8990d79d-0bcc-4e2b-ad59-013e7f6d63a2.svg)](https://wakatime.com/badge/user/70908aa3-b2c6-4f44-a07f-7bd45f260e48/project/8990d79d-0bcc-4e2b-ad59-013e7f6d63a2)
+
 这是一个简单的个人 Blog，建立的初衷是为了方便地分享本人的一些笔记和文档，也因此此 Blog 起名为 Cloud.
 
 ## 常用编程语言
