@@ -7,9 +7,24 @@ redirect_from:
   - /markdown.html
 ---
 
-这里整理收集了我写的一些笔记、讲义等文档（更新时间：2026-6-9）：
+这里整理收集了我写的一些笔记、讲义等文档（更新时间：2026-9-28）：
 
 ## 学习笔记
+
+### 量子力学笔记
+
+[下载链接](/files/QuantumMechanics.pdf)
+[在线阅读](/pdfjs/web/viewer.html?file=/files/QuantumMechanics.pdf)
+
+更新中，参照 CC 4.0 BY-NC 进行共享. 请不要将本文档上传至任意的公共平台（如百度文库等）
+
+
+### 热力学与统计物理笔记
+
+[下载链接](/files/ThermodynamicsAndStatisticalPhysics.pdf)
+[在线阅读](/pdfjs/web/viewer.html?file=/files/ThermodynamicsAndStatisticalPhysics.pdf)
+
+更新中，参照 CC 4.0 BY-NC 进行共享. 请不要将本文档上传至任意的公共平台（如百度文库等）
 
 ### 理论力学笔记
 
@@ -148,11 +163,28 @@ redirect_from:
 
 ## 杂七杂八
 
+### PT-Notes
+
+[网站链接](https://pt.ghe0000.pp.ua/)
+
+笔者打完 2026 CYPT 后整理的网站，介绍一些个人经验，给打 PT 类的比赛的同学进行参考.
+
+更新中，参照 CC 4.0 BY-NC 进行共享. 代码参照 MIT 协议共享.
+
 ### 科学编程入门课程作业
 
-[仓库链接](https://github.com/GHe0000/scientific-programming-intro)
+[仓库链接](https://github.com/GHe0000/xmu_scientific_programming_intro)
 [在线阅读](https://spi.ghe0000.pp.ua/)
 
 这是笔者在上厦门大学张勇老师的科学编程入门课程的作业. 其中有挺多有意思的内容，因此放在网站上分享.
 
 完稿，参照 CC 4.0 BY-NC 进行共享. 代码参照 MIT 协议共享.
+
+### 机器学期课程作业
+
+[仓库链接](https://github.com/GHe0000/xmu_machine_learning)
+[在线阅读](https://ml.ghe0000.pp.ua/)
+
+这是笔者在上厦门大学张勇老师的科学编程入门课程的作业，放在网站上分享以方便讨论.
+
+更新中，参照 CC 4.0 BY-NC 进行共享. 代码参照 MIT 协议共享.

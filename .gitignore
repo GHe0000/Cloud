@@ -12,6 +12,7 @@ node_modules
 package-lock.json
 
 Sync.ps1
+Sync.fish
 
 /.obsidian
 aux/
