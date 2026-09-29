@@ -12,22 +12,32 @@ redirect_from:
 
 这是一个简单的个人 Blog，建立的初衷是为了方便地分享本人的一些笔记和文档，也因此此 Blog 起名为 Cloud.
 
-## 常用编程语言
+## 网页导航
 
-- 主力编程语言：Python、C++
+网页分为下面几个部分，如果找不到，可以点击右上角菜单按钮.
+
+- 文章：比较正式(?)的笔记或文档
+- 随想：记录个人的一些小想法以及随想的页面
+- 书单：个人书籍推荐（久没整理更新）
+- 网站收集：记录一些常用好用的网站
+- 笔记分享：个人的学习笔记、讲义、作业整理等
+
+## 常用工具
+
+- 编程语言：Python、C++
 - 符号计算：Mathematica、Sympy
 - 文档：LaTeX
 - 笔记：Markdown
 
 ## 个人项目
 
-这里记录了本人制作的一些小项目的仓库链接：
+这里记录了我的一些小项目的仓库链接：
 
-**BlackHoleSim**: 一个个人的练手项目，用 C++ 实现一个 Schwarzschild 时空的光追，并渲染一个黑洞的吸积盘图像.
+**BlackHoleSim**: 个人的练手项目，用 C++ 实现一个 Schwarzschild 时空的光追，并渲染一个黑洞的吸积盘图像.
 
 <https://github.com/GHe0000/BlackHoleSim>
 
-**Physics**：我写的一些物理计算的脚本，如一维定态 Schrödinger 方程数值求解，广义相对论测地线数值计算，张量符号计算等脚本.
+**Physics**：一些物理计算的脚本，如一维定态 Schrödinger 方程数值求解，广义相对论测地线数值计算，张量符号计算等脚本.
 
 <https://github.com/GHe0000/Physics>
 
@@ -64,3 +74,5 @@ redirect_from:
 - CrazyHarp: <http://www.crazyharp.icu/>
 - CDX0721: <https://cdx0721.github.io/>
 - Orangedog（虽然还什么内容都没有）: <https://orangedog0415.github.io/>
+
+（欢迎交换友链）
