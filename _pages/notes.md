@@ -2,7 +2,6 @@
 permalink: /notes/
 title: "Notes"
 author_profile: true
-toc: true
 redirect_from: 
   - /md/
   - /markdown.html
