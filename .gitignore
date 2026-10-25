@@ -16,3 +16,9 @@ Sync.fish
 
 /.obsidian
 aux/
+
+# Local agent configuration and working files
+.codex/
+.agents/
+AGENTS.md
+AGENTS.local.md
