@@ -19,7 +19,7 @@ tags:
 
 ### 简要介绍
 
-有限差分的基本思想非常简单：在一些微积分教材中，我们常常将 $\Delta y / \Delta x$ 取极限得到 $\mathrm{d} y / \mathrm{d} x$，因此，在计算 $\mathrm{d} y / \mathrm{d} x$ 时，我们可以通过如下式子进行数值计算：
+有限差分的基本思想非常简单：在一些微积分教材中，我们常常将 $\Delta y / \Delta x$ 取极限得到 $d y / d x$，因此，在计算 $d y / d x$ 时，我们可以通过如下式子进行数值计算：
 
 $$ 
 \begin{aligned}
@@ -28,7 +28,7 @@ y'(x) &= \lim_{\Delta x \to 0} \frac{y(x+\Delta x) - y(x)}{\Delta x} \\
 \end{aligned}
 $$
 
-这里的 $\Delta x$ 即为**步长**，其影响了微分近似的精确程度，步长越小，近似越精确.
+这里的 $\Delta x$ 即为**步长**，其影响了微分近似的精确程度，在舍入误差尚不显著的范围内，减小步长通常可以提高精度.
 
 ### 差分公式推导
 
@@ -80,7 +80,7 @@ $$H \psi(x) = E \psi(x)$$
 
 其中算符 $H$ 为：
 
-$$H = -\frac{\hbar^2}{2m}\frac{\mathrm{d}^2}{\mathrm{d} x^2}+V$$ 
+$$H = -\frac{\hbar^2}{2m}\frac{d^2}{d x^2}+V$$ 
 
 而能量 $E$ 为一个标量. 上式可以发现其很像特征方程的形式（实际上在教材的计算中我们常常将函数当成 Hilbert 空间中的一个向量，然后还是通过特征方程那一套来分析），因此我们可以考虑将坐标 $x$ 离散化成一个一维向量：
 
@@ -94,8 +94,8 @@ $$\psi = (\psi(x_1),\psi(x_2),\psi(x_3),\dots,\psi(x_n))^T$$
 
 $$
 \begin{aligned}
-\frac{\mathrm{d}^2 \psi(x_i)}{\mathrm{d}x^2} \approx& \frac{\psi(x_i+\Delta x) - 2 \psi(x_i) + \psi(x_i - \Delta x)}{\Delta x^2} \\
-\approx& \frac{\psi(x_{i+1}-2\psi(x_i)+\psi(x_{i-1}))}{\Delta x^2}
+\frac{d^2 \psi(x_i)}{dx^2} \approx& \frac{\psi(x_i+\Delta x) - 2 \psi(x_i) + \psi(x_i - \Delta x)}{\Delta x^2} \\
+\approx& \frac{\psi(x_{i+1})-2\psi(x_i)+\psi(x_{i-1})}{\Delta x^2}
 \end{aligned}
 $$
 
@@ -108,13 +108,13 @@ D = \frac{1}{\Delta x^2}
 1 & -2 & 1 & 0 & \cdots & 0 \\
 0 & 1 & -2 & 1 & \cdots & 0 \\
 \vdots&\vdots&\vdots&\vdots&\ddots & \vdots \\
-0 & 0 & 0 & 0 & \cdots & -2
+0 & 0 & 0 & \cdots & 1 & -2
 \end{bmatrix}
 $$
 
 因此，整个算符 $H$ 可以用如下矩阵表示：
 
-$$H = -\frac{\hbar^2}{2m \Delta x^2} D + V$$
+$$H = -\frac{\hbar^2}{2m} D + V$$
 
 这里 $V$ 也要改写为矩阵的形式.
 
@@ -139,7 +139,7 @@ hbar = 1
 m = 1
 X = 10
 N = 200
-dx = 2 * X / N
+dx = 2 * X / (N - 1)
 En = 9
 ```
 

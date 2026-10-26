@@ -23,6 +23,8 @@ browsers*.
 I followed the instructions described by Dason Kurkiewicz for
 [using Jekyll and Mathjax](http://dasonk.github.io/blog/2012/10/09/Using-Jekyll-and-Mathjax/).
 
+以下记录旧版 redcarpet 与 MathJax 2 环境的配置，不代表当前站点配置.
+
 Here are some important details. I had to modify the Ruby library for Markdown in
 my ```_config.yml``` file. Now I'm using redcarpet so the corresponding line in the
 configuration file is: ```markdown: redcarpet```
@@ -32,7 +34,7 @@ To load the MathJax javascript, I added the following lines in my layout ```page
 
 {% highlight r %}
 <script type="text/javascript"
-    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
 {% endhighlight %}
 

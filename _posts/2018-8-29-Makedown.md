@@ -1,6 +1,6 @@
 ---
-title: Makedown 测试
-description: Makedown 测试
+title: Markdown 测试
+description: Markdown 测试
 ---
 
 <!-- more -->
@@ -55,8 +55,7 @@ Single line blockquote:
 | Header1 | Header2 | Header3 |
 |:--------|:-------:|--------:|
 | cell1   | cell2   | cell3   |
-| cell4   | ce
-ll5   | cell6   |
+| cell4 | cell5 | cell6 |
 |-----------------------------|
 | cell1   | cell2   | cell3   |
 | cell4   | cell5   | cell6   |
@@ -252,7 +251,7 @@ Getting our science styling on with H<sub>2</sub>O, which should push the "2" do
 
 ### Superscript Tag
 
-Still sticking with science and Isaac Newton's E = MC<sup>2</sup>, which should lift the 2 up.
+Still sticking with science and Albert Einstein's E = mc<sup>2</sup>, which should lift the 2 up.
 
 ### Variable Tag
 

@@ -14,11 +14,14 @@ tags:
 DeepDream 是谷歌发布的对卷积神经网络（CNN）进行可视化的方法，当然它的用途不仅限于此，我们可以通过它让机器“做梦”，计算机将自然图像的一些特征放大，生成了它想想中的一些物体. 利用这个特点还可以生成一些从未有过的物体. 
 
 ## 原理
-卷积神经网络由于其从理论上难以解释，一直被很多学者诟病.在2013年“Visualizing and Understanding Convolutional Neural Networks”这篇文章提出了使用梯度上升的方法可视化网络每一层的特征，即用一张噪声图像输入网络，反向更新的时候不更新网络权重，而是更新初始图像的像素值，以这种“训练图像”的方式可视化网络. Deep Dream正是以此为基础. 
+CNN 特征可视化有反卷积可视化、激活最大化等方法. 这里采用固定网络权重、通过梯度上升更新输入图像的方法.
 
-之前说过，Deep Dream需要放大图像特征. 比如：有一个网络学习了分类猫和狗的任务，给这个网络一张云的图像，这朵云可能比较像狗，那么机器提取的特征可能也会像狗. 假设对应一个特征 $[0.6, 0.4]$, 0.6 表示图像为狗的概率， 0.4 图像表示为猫的概率，那么采用 $L_2$ 范数可以很好达到放大特征的效果. 对于这样一个特征，$L_2 = x_1^2 + x_2^2$，若 $x_1$ 越大，$x_2$ 越小，则 $L_2$ 越大，所以只需要最大化 $L_2$ 就能保证当 $x_1 > x_2$ 的时候，迭代的轮数越多，$x_1$ 越大，$x_2$ 越小，所以图像就会越来越像狗. 每次迭代相当于计算 $L_2$ 范数，然后用梯度上升的方法调整图像. 当然最开始的图像不一定是真实的图像，也可以从一张噪声图像，只不过此时生成的梦境图像会比较奇怪. 
+之前说过，Deep Dream需要放大图像特征. 比如：有一个网络学习了分类猫和狗的任务，给这个网络一张云的图像，这朵云可能比较像狗，那么机器提取的特征可能也会像狗. 假设对应一个特征 $[0.6, 0.4]$, 0.6 表示图像为狗的概率， 0.4 图像表示为猫的概率，那么采用 $L_2$ 范数的平方可以很好达到放大特征的效果. 对于这样一个特征，$L_2^2 = x_1^2 + x_2^2$，若 $x_1$ 越大，$x_2$ 越小，则 $L_2^2$ 越大，所以只需要最大化 $L_2^2$ 就能保证当 $x_1 > x_2$ 的时候，迭代的轮数越多，$x_1$ 越大，$x_2$ 越小，所以图像就会越来越像狗. 每次迭代相当于计算 $L_2$ 范数的平方，然后用梯度上升的方法调整图像. 当然最开始的图像不一定是真实的图像，也可以从一张噪声图像，只不过此时生成的梦境图像会比较奇怪. 
 
 ## Deep Dream 的Keras实现
+
+前文以平方和说明放大激活的思路；以下实现选择层激活均值作为优化目标.
+
 ```python
 # -*- coding: utf-8 -*-
 import tensorflow as tf
@@ -82,7 +85,8 @@ for i in range(num_pool_layers):
     layer_output = layer_dict[layer_name].output
     loss = K.mean(layer_output)
     grads = K.gradients(loss, dream)[0]
-    grads /= (K.sqrt(K.mean(K.square(grads))) + 1e-5) * lr
+    grads /= K.sqrt(K.mean(K.square(grads))) + 1e-5
+    grads *= lr
     f = K.function([dream], [loss, grads])
     img_value = p_img.copy()
     loss_value, grads_value = f([img_value])
@@ -121,7 +125,7 @@ for i in range(num_pool_layers):
     plt.show()
 
 # try to dream structure out of random noise
-img_noise = np.random.randint(100, 150, size=(227, 227, 3), dtype=np.uint8)
+img_noise = np.random.randint(100, 150, size=img.shape, dtype=np.uint8)
 print(img_noise.shape)
 plt.imshow(img_noise)
 plt.show()
@@ -142,7 +146,7 @@ for i in range(num_pool_layers):
     grads /= (K.sqrt(K.mean(K.square(grads))) + 1e-5)
     # optimizer
     f = K.function([dream], [loss, grads])
-    img_value = p_img.copy()
+    img_value = preprocess(img_noise)
     fig, axes = plt.subplots(1, num_iters_per_layer, figsize=(20, 10))
     for it in range(num_iters_per_layer):
         loss_value, grads_value = f([img_value])
@@ -167,7 +171,7 @@ for i in range(num_pool_layers):
     grads /= (K.sqrt(K.mean(K.square(grads))) + 1e-5)
     # optimizer
     f = K.function([dream], [loss, grads])
-    img_value = p_img.copy()
+    img_value = preprocess(img_noise)
     fig, axes = plt.subplots(1, num_iters_per_layer, figsize=(20, 10))
     for it in range(num_iters_per_layer):
         loss_value, grads_value = f([img_value])
